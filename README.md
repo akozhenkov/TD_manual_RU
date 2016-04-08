@@ -1,2 +1,3 @@
-# TD_manual_RU
+# TopoDroid manual RU
+
 Translation of the Topodroid man pages into Russian
