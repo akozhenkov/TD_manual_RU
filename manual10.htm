@@ -1,0 +1,63 @@
+<html><body>
+<h3>[10] РИСОВАНИЕ АБРИСОВ</h3>
+
+В области рисования показана нитка хода и боковые замеры.  Область можно перетаскивать одним (или двумя) пальцем(и), приближать и отдалять двумя пальцами. Вращать область нельзя ; план всегдв имеет Север вверху, а профиль ориентирован вертикально.<br><p>
+
+Нажмите кнопку <u>Рисовать</u>: приложение переходит в режим <b>рисования</b> и кнопка будет подсвечивается белым квадратом. Теперь вы можете рисовать с помощью пальца или стилуса (два пальца для перемещения и масштабирования). При помощи кнопок <u>отмена</u> и <u>повтор</u> вы отменить последние нарисованные или удаленные объекты или вернуть их обратно. Конечно, вы можете жать <u>отмена</u> пока область рисования не окажется пуста.<br><p>
+
+Находясь в режиме рисования, эскиз может также быть перемещен путем перетаскивания его за край области и масштабирован при помощи кнопок управления зумом, если эти функции были включены через настройки. Это позволяет вам работать со стилусом, без необходимости действовать двумя пальцами.<br><p>
+
+The <u>drawing tool picker</u> button allows you to pick another line style, or an "area" style (a closed region), or iconic symbols. See the <a href="page_tools.htm">drawing tool palette</a>.<br><p>
+
+<b>Point tools</b><br>
+Point tools are iconic symbols. To add a symbol to the sketch tap the canvas where you want to place it.
+For "label" point you must also enter the label text in the coming dialog.<br><p>
+
+<b>Line tools</b><br>
+Line tools are different line-drawing styles. 
+Lines have an orientation (when a line is selected, in edit mode, its orientatio is shown by a yellow tick poynting to the left).<br><p>
+
+The line thickness is one of the <u>Settings</u>. There are separate options for the centerline/splays and the drawing line thickness.<br><p>
+
+The "section" line is special as it is always made into a straight segment with a short tick showing the direction of view.
+A "section" point is automatically added near the end of the section line. This point as the "scrap" option preset to the line scrap and is deleted when you delete the section line.<br><p>
+
+<b>Area tools</b><br>
+Area tools are closed region shaders. To draw an area trace its contour. You do not need to be very precise as TopoDroid will close it.<br>
+The water area is special because it is "closed horizontally" in the profile sketch and in the cross sections, because the surface of a pond is usually horizontal. To draw a water area (in the profile sketch) trace only the lower bottom line of the pond.<br><p>
+
+<b>Undo, redo, erase and edit</b><br><p>
+
+You can also correct mistakes in the drawing. The <u>Undo</u> button lets you remove the last item. What if you need to erase a line or a symbol that you drew long ago, but do not want to loose all the intermediate work? You have two choices: the <u>Erase</u> and the <u>Edit</u> button.  The former is very intuitive: it cancels everything you pass your finger over. It is just like a real eraser on the paper: if you pass it in the middle of a line it erases only the central portion (thus leaving two lines).<br><p>
+
+The <u>Edit</u> [A] button is not so intuitive, but it is very powerful, as it allows pointwise editing operations. In this mode all the drawn items are shown as little green dots. You have to select the item to edit by tapping on it. If there are several items close together, they will all be selected (and shown with a pink circle), but only one will be chosen for editing (big green circle). It may not be what you wanted, but never mind: move among the selected point with the <u>Prev</u>-<u>Next</u> button.<br>
+
+The size of the green dots and the selection radius are two <u>Settings</u>.<br><p>
+
+Segments of Bezier lines have two control points. These are stored with the segment end-point and when this is the selected editing point the two control points are shown as pink circles. Each of them can be moved around by dragging it with the finger.<br><p>
+
+To clear the selection tap somewhere else in the canvas. To move the editing point, drag it with the finger. The item can be deleted (removed) or its <a href="page_item_edit.htm">properties</a> changed ("tool" button). Editing applies also to shots and stations.
+<br><p>
+
+<h4>Point-wise edit</h4>
+
+The second to the right button applies only to drawing items and has a drop-down menu of advanced editing actions.
+<ul>
+<li><i>Snap to nearby point</i>: move the point to coincide with the closest nearby point (no action if there is no nearby point) [points, lines, areas]</li>
+<li><i>Snap to nearby line</i> move to point to coincide with the closest line point, and replace the pieces of the area border before and after it, with pieces that follow the line path [areas]</li>
+<li><i>Split the point in two</i>, actually duplicating it and inserting a point in the line/area [lines, areas]</li>
+<li><i>Cut the line at the point</i>, thus making two lines [lines]</li>
+<li><i>Straighten the line segment</i> removes the control points [lines, areas]</li>
+<li><i>Smooth the line segment</i> inserts control points. These are put at 1/3 and 2/3 along the segment. Further editing can move them and give any wanted curvature to the segment. [lines, areas]</li>
+<li><i>Remove the line/area point</i> [lines, areas]</li>
+</ul><br><p>
+
+
+<a href="page_sketch_station.htm">Sketch station editing</a><br>
+<a href="page_tools.htm">Drawing tools</a><br>
+<a href="page_walls.htm">Auto walls</a><br>
+<p>
+<a href="manual09.htm">&lt; Sketch window</a> |
+<a href="manual11.htm">Cross-sections &gt;</a>
+
+</body></html>

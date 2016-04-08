@@ -1,0 +1,136 @@
+<html><body>
+<h3>[13] IMPORT EXPORT </h3>
+When you are done, export the survey in your favourite format and make a zip archive. The zip archive is the a complete backup of your survey, and its exports. You can use it to transfer the survey to another android.<br>
+
+After you have downloaded the zip to your PC and unzipped it, you can complete the cave map with whatever program you are used to. The support of other cave survey file format in import may not be complete.<br><p>
+
+
+<h4>SURVEY DATA EXPORT</h4>
+
+<b>Therion</b><br>
+Survey data are exported in <i>Therion</i> format, using the data "normal" form.<br>
+Data units are according to the user options.<br>
+The team names are listed but the command is commented.<br>
+Station comments and marks (fixed, painted) preceed the centerline data.<br>
+Furthermore "input" of the th2 files and definitions for a map for each scrap are added at the end, but are commented.<br><p>
+
+TopoDroid parsing of <i>Therion</i> data syntax is very limited. Basically only data in "normal" form are understood. The Therion data commands "units", "flag", "extend", "mark" and "station" are supported.<br>
+Fixed points ("fix") are parsed but not taken into account as "cs" is not supported.<br><p>
+
+<b>Compass</b><br>
+<i>Compass</i> data file are supported both in input and in export.<br>
+Data units are 'feet' and 'degrees'.<br><p>
+
+<b>Walls</b><br>
+Survey data can be exported as <i>Walls</i> files.<br>
+Data units are according to the user options.<br><p>
+
+<b>Survex</b><br>
+Survey data can be exported as <i>Survex</i> files.<br>
+Data units are according to the user options.<br>
+Settings:
+<ul>
+<li>line termination can be either Unix or Windows</li>
+<li>splay shots can be exported with a named TO station (named as the FROM station with a letter appended)</li>
+</ul><br><p>
+
+<b>VisualTopo</b><br>
+<i>VisualTopo</i> data file are supported both in input and in export.<br>
+Data units are 'meters' and 'degrees'.<br><p>
+
+<b>PocketTopo</b><br>
+TopoDroid supports <i>PocketTopo</i> both in import and in export.<br><p>
+
+The exports contain only the survey data.<br>
+On export station names with alphabetic characters must be converted to integer number. In this case TopoDroid replaces each character with two digits. More precisely 'a' goes to '00', 'b' to '01' and so on, 'A' to '50', 'B' to '51', and so on. Every other character (ie, non-alphanumeric) goes to '99'.<br><p>
+
+On import, "outline" and "profile" sketches are imported.<br>
+<i>PocketTopo</i> uses only a few colors to differentiate line types.
+Therefore a <a href="page_pt_cmap.htm">map</a> from colors to therion_types is used. The line and point types can be through a setting.<br><p>
+
+It may happen that the imported sketch is not aligned with the survey data. In this case you can shift the sketch in the <i>Sketch</i> window, to fit the centerline.<br><p>
+
+<b>cSurvey</b><br>
+Data exports as <i>cSurvey</i> file contains only the survey data.<br><p>
+
+<b>PLT</b><br>
+Survey data can be exported as track file (<i>OziExplorer</i>) if you have georeferenced a station.<br><p>
+
+<b>KML</b><br>
+Survey data can be exported as KML file (<i>GoogleEarth</i>) if you have georeferenced a station.<br><p>
+
+<b>CSV</b><br>
+Survey data can be esported as a list of records with comma-separated fields:
+<ul>
+<li>"from" station</li>
+<li>"to" station</li>
+<li>distance, azimuth, clino</li>
+<li>if present the flag</li>
+</ul><br>
+Shot comments are not exported. A brief header is prepended to the data list.<br><p>
+
+<b>DXF</b><br>
+Survey data are exported as 3D DXF with layers
+<ul>
+<li>stations</li>
+<li>legs</li>
+<li>splays</li>
+</ul>
+<br><p>
+
+<h4>SKETCH EXPORT</h4>
+
+<b>Therion</b><br>
+<i>Therion</i> is the cave map drafting program of choice for TopoDroid.<br><p>
+
+Sketches are "natively" saved either as Therion files or in TopoDroid binary format.<br>
+The conversion from Therion to binary is "automatic": when you open a sketch and TopoDroid does not find the binary file, it looks for the Therion file.<br> 
+The conversion from binary to Therion must be requested through the appropriate menu in the <i>Survey</i> window.<br><p>
+
+By default TopoDroid, unlike "xtherion", does not add an extra point coinciding with the first point, to closed area borders.<br><p>
+
+<b>cSurvey</b><br>
+These exports contain both the plan and profile sketches, as well as the survey data.
+The sketch items are distributed on suitable <i>cSurvey</i> layers.<br><p>
+
+If your survey has only one sketch this is a complete export of your work (except for the cross-sections).
+If the survey has more than one sketch, you must export each sketch individually and merge the exports with <i>cSurvey</i>.<br><p>
+
+<b>DXF</b><br>
+Sketches can be exported as 2D DXF files with layers for each point, line and area type in addition to the layers of the data 3D DXF.<br><p>
+
+The sketch items in the 2D DXF lie in the Z=0 plane.<br><p>
+
+<b>SVG</b><br>
+Sketches can be exported as SVG files.<br><p>
+
+<b>PNG</b><br>
+Image file in PNG format is used only to export sketches. The image resolution (pixels per meter) can be changed through a setting. If the system does not have enough memory to create the image at the set resolution, TopoDroid uses a smaller resolution until the export succeeds.<br><p>
+
+<h4>CALIBRATION EXPORT</h4>
+
+<a href="page_calib_import">Calibrations</a> can be exported and imported as CSV files.<br><p>
+
+<h4>IMPORT/EXPORT SETTINGS</h4>
+<ul>
+<li><i>PocketTopo color-map</i>: defines how to map PocketTopo colors on types of sketch items, for import of PocketTopo files.</li> 
+<li><i>Sketch auto-stations</i>: whether to automatically add station points to the saved therion file(s). If you want to use the sketch files in therion they must have station points to define their scale. You can choose manually which point to add (by editing the sketch drawing), or let TopoDroid add the stations. The program will add all the stations that are "inside" the drawing (inside the drawing convex hull).</li>
+<li><i>Data export format</i>: defines the default format to which data are exported. This file is automatically generated and inserted in the ZIP export.</li>
+<li><i>Station prefix</i>: whether to add the survey prefix to the stations for the cSurvey export.</li>
+<li><i>Survex line termination</i>: either Unix or Windows</li>
+<li><i>Survex named splay</i>: whether to name the TO station of splays</li>
+<li><i>Survex LRUD</i>: whether to add LRUD lines to survex exports [default no]</li>
+<li><i>PNG resolution</i>: the resolution of the PNG files for sketch exports. It can be a number between 1 and 10. The higher the bigger the image (if you set it too high the system may not have enough memory to create the PNG).</li> 
+<li><i>PNG background color</i>: you can set the background color of PNG images by specifying the RGB values (three integers between 0 and 255).</li>
+<li><i>DXF scale</i>: scale of the DXF export of sketches.</li>
+<li><i>AutoCAD version</i> for the DXF export: either 6 (AutoCAD R9) or 12 (AutoCAD R13). In version 6 DXF export bezier curves are replaced by polylines. Version 12 DXF export uses splines, but is still buggy.</li>
+</ul><br><p>
+
+
+<a href="page_finalmap.htm">The final map</a><br>
+<p>
+
+<a href="manual12.htm">&lt; Overview window</a> |
+<a href="manual14.htm">Index &gt;</a>
+
+</body></html>
