@@ -26,38 +26,38 @@
 Инструменты областей это закрытые полигоны залитые цветом. Чтобы нарисовать область нарисуйте ее контур. Вам не нужно быть очень точным, так как TopoDroid закрывает его автоматически.<br>
 Полигон воды является особенным потому что он всегда "замыкается горизонтальной линией" на разрезе-развертке и на сечениях, поскольку поверхность водоемов как правило горизонтальная. Чтобы нарисовать водоем (в разрезе) нарисуйте только линию дна, полигон будет замкнут автоматически.<br><p>
 
-<b>Undo, redo, erase and edit</b><br><p>
+<b>Отмена, повтор, стереть и редактировние</b><br><p>
 
-You can also correct mistakes in the drawing. The <u>Undo</u> button lets you remove the last item. What if you need to erase a line or a symbol that you drew long ago, but do not want to loose all the intermediate work? You have two choices: the <u>Erase</u> and the <u>Edit</u> button.  The former is very intuitive: it cancels everything you pass your finger over. It is just like a real eraser on the paper: if you pass it in the middle of a line it erases only the central portion (thus leaving two lines).<br><p>
+Вы также можете исправлять ошибки в абрисе. Кнопка <u>Отмена</u> позволяет удалить последний элемент. Что делать, если вам нужно стереть линию или символ, который вы нарисовали давно, но не хотите потерять все остальную работу? Вы можете использовать две кнопки: либо <u>Удалить</u> либо <u>Редактировать</u>.  Первая из них очень интуитивна: она стирает все по чему вы преведете. Работает так же, как настоящий ластик на бумаге: если вы передаете им в середине линии он стирает только центральную часть (таким образом, оставляя две линии).<br><p>
 
-The <u>Edit</u> [A] button is not so intuitive, but it is very powerful, as it allows pointwise editing operations. In this mode all the drawn items are shown as little green dots. You have to select the item to edit by tapping on it. If there are several items close together, they will all be selected (and shown with a pink circle), but only one will be chosen for editing (big green circle). It may not be what you wanted, but never mind: move among the selected point with the <u>Prev</u>-<u>Next</u> button.<br>
+Кнопка <u>Изменить</u> [A] не настолько интуитивно понятная, но очень функциональная, поскольку она позволяет редактировать объекты поточечно. В этом режиме все нарисованные элементы показаны в виде маленьких зеленых точек. Вы должны выбрать объект для редактирования, нажав на него. Если есть несколько элементов расположенных близко друг к другу, все они будут выбраны (и показаны с розовым кругом), но для редактирования будет выбрана только одна точка (большой зеленый круг). Если выбралась не та точка которую вы хотели, не переживайте: вы можете передвигаться между точками в линии при помощи кнопок <u>Предыдущая</u>-<u>Следующая</u>.<br>
 
-The size of the green dots and the selection radius are two <u>Settings</u>.<br><p>
+Размер зеленых точек и радиус выбора регулируються в <u>Настройках</u>.<br><p>
 
-Segments of Bezier lines have two control points. These are stored with the segment end-point and when this is the selected editing point the two control points are shown as pink circles. Each of them can be moved around by dragging it with the finger.<br><p>
+Сегменты линий Безье имеют две контрольные точки. Они хранятся в конечной точке сегмента и когда эта точка выбранна для редактирования две контрольные точки будут показаны в виде розовых кругов. Каждую из них можно перемещать, перетаскивая пальцем.<br><p>
 
-To clear the selection tap somewhere else in the canvas. To move the editing point, drag it with the finger. The item can be deleted (removed) or its <a href="page_item_edit.htm">properties</a> changed ("tool" button). Editing applies also to shots and stations.
+Чтобы очистить выбор нажмите на экран где-нибудь в стороне. Чтобы переместить  редактируемую точку, перетащите его с помощью пальца. Элемент может быть удален (стерт) либо его <a href="page_item_edit.htm">свойства</a> могут быть изменены ( кнопка "инструменты"). Редактировать также можно к вектора и пикеты.
 <br><p>
 
-<h4>Point-wise edit</h4>
+<h4>Поточечное редактирование</h4>
 
-The second to the right button applies only to drawing items and has a drop-down menu of advanced editing actions.
+Вторая кнопка справа применяется только к элементам абриса и имеет выпадающее меню расширенных действий редактирования.
 <ul>
-<li><i>Snap to nearby point</i>: move the point to coincide with the closest nearby point (no action if there is no nearby point) [points, lines, areas]</li>
-<li><i>Snap to nearby line</i> move to point to coincide with the closest line point, and replace the pieces of the area border before and after it, with pieces that follow the line path [areas]</li>
-<li><i>Split the point in two</i>, actually duplicating it and inserting a point in the line/area [lines, areas]</li>
-<li><i>Cut the line at the point</i>, thus making two lines [lines]</li>
-<li><i>Straighten the line segment</i> removes the control points [lines, areas]</li>
-<li><i>Smooth the line segment</i> inserts control points. These are put at 1/3 and 2/3 along the segment. Further editing can move them and give any wanted curvature to the segment. [lines, areas]</li>
-<li><i>Remove the line/area point</i> [lines, areas]</li>
+<li><i>Прилипнуть к ближайшей точке</i>: переместить точку чтобы та совпала с ближайшей соседней точкой (ничего не произойдет, если поблизости нет точки) [точки, линии, области]</li>
+<li><i>Прилипнуть к ближайшей линии</i> переместить точку чтобы та совпала с ближайшей соседней точкой линии, и заменить части границы области до и после нее частями, которые следуют по траектории линии [площади]</li>
+<li><i>Разделить в точке</i>, фактически дублируюет точку и вставляет точку в линию / область [линии, области]</li>
+<li><i>Разорвать линию в точке</i>, разрывает линию в точке [линии]</li>
+<li><i>Спрямить сегмент линии</i> удаляет промежуточные точки чтобы выпрямить линию [линии, области]</li>
+<li><i>Сгладить сегмент линии</i> вставляет промежуточные точки. Точки добавляються в 1/3 и 2/3 части сегмента. Дальнейшим редактированием можно перемещать их и задать нужную кривизну к сегменту. [линии, области]</li>
+<li><i>Удалить точку линии/области</i> [линии, области]</li>
 </ul><br><p>
 
 
 <a href="page_sketch_station.htm">Sketch station editing</a><br>
-<a href="page_tools.htm">Drawing tools</a><br>
-<a href="page_walls.htm">Auto walls</a><br>
+<a href="page_tools.htm">Инструменты рисования</a><br>
+<a href="page_walls.htm">Авто стены</a><br>
 <p>
-<a href="manual09.htm">&lt; Sketch window</a> |
-<a href="manual11.htm">Cross-sections &gt;</a>
+<a href="manual09.htm">&lt; Окно абриса</a> |
+<a href="manual11.htm">Сечения &gt;</a>
 
 </body></html>
