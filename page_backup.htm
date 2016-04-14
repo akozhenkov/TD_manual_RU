@@ -1,36 +1,36 @@
 <html><body>
 
-<h4>Sketch Reload</h4>
+<h4>Перезагрузить абрис</h4>
 
-This dialog is opened by the <u>Reload</u> menu of the <i>Sketch</i> window.<br><p>
+Это диалоговое окно открывается пунктом меню <u>Перезагрузить</u> в окне  <i>Абрисов</i>.<br><p>
 
-TopoDroid maintains backup copies of sketch files, from which the sketch can be recovered.<br>
-TopoDroid keeps a set of four backup copies for each sketch file.
-These are named with suffixes "bck", "bck0", "bck1", and "bck2" and are stored in the <i>th2</i> (Therion files)
-or <i>tdr</i> (binary files) subdirectory. Whenever a sketch is saved the backup copies are rotated
-(eg, "bck1" is renamed "bck2", and so on; "bck" is renamed "bck0"),
-the old "th2" or "tdr" file is renamed with suffix "bck", and the sketch is saved to a new "th2" or "tdr" file.
+TopoDroid поддерживает резервные копии файлов абриса, из которых абрисы могут быть восстановлены.<br>
+TopoDroid сохраняет набор из четырех резервных копий для каждого файла абриса.
+Файлы с суффиксами в названии "bck", "bck0", "bck1" и "bck2" хранятся в <i>th2</i> (Therion)
+или <i>tdr</i> (бинарные файлы) поддиректориях. Всякий раз, когда абрис сохранен резервные копии прокручиваються
+( "bck1" переименовывается в "bck2" и т.д.; "bck" переименовывается в "bck0"),
+предыдущий "th2" и "tdr" файлы получают суффикс "bck", и текущий абрис сохраняется в файл "th2" или "tdr".
 <br><p>
 
-TopoDroid saves a sketch whenever it is modified (eg, a new item is added, or part of the sketch is erased)
-while it is open. Only one backup is used in this case: the old saved copy being renamed with suffix "bck".
+TopoDroid сохраняет абрис всякий раз, когда он модифицируется (например, добавляется новый элемент или часть линий стирается)
+в то время пока он открыт. Только одна резервная копия используется в этом случае: старая сохраненная копия переименовывается с суффиксом "bck".
 <br><p>
 
-The sketch is saved only if you have made changes to it, otherwise it is not saved and the backup copies are not rotated.
+Абрис сохраняется только, если вы внесли в него изменения, в противном случае он не сохраняется, а резервные копии не переименовывается.
 <br><p>
 
-The dialog shows the list of the sketch backups with
+Диалог показывает список резервных копий с абриса
 <ul>
-<li>size of the file (in bytes)</li>
-<li>how long ago it was written, with suffixes for minutes (m), hours (h), days (d), months (M) and years (Y)</li>
-<li>filename</li>
+<li>размер файла (в байтах)</li>
+<li>как давно файл был записан, с суффиксов минут (m), часов (h), дней (d), месяцев (M) и лет (Y)</li>
+<li>имя файла</li>
 </ul>
 <br><p> 
 
-To recover a sketch you choose which copy to load.<br>
-The filename is shown above the list.<br>
-Next you tap the <b>OK</b> button to confirm.<br>
-The <u>Back</u> key closes the dialog without reloading the sketch.
+Чтобы восстановить абрис вы выбираете, который скопировать для загрузки.<br>
+Имя файла отображается над списком.<br>
+Далее нажмите кнопку <b>OK</b> чтобы подтвердить.<br>
+Кнопка <u>Назад</u> закрывает диалоговое окно без перезагрузки абриса.
 <br><p>
 
 </body></html>
