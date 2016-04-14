@@ -23,13 +23,14 @@
 <br><p>
 
 <b>Направление развертки векторов</b><br>
-В момент когда скачивается замер на следующий пикет TopoDroid автоматически устанавливает направление "развертки". Это происходит и для пикетов вводимых вручную, without specifying the "extend" in the shot dialog. By default the "extend" is either LEFT, RIGHT, or VERT (vertical), depending on the angle the shot makes with a reference azimuth. The "Extend Reference" dialog allows to change the reference azimuth, by rotating it clockwise or counterclockwise. Alternatively, the reference azimuth can be set using the Android compass sensors.<br><p>
+В момент когда скачивается замер на следующий пикет TopoDroid автоматически устанавливает направление "развертки". Это также происходит и для пикетов вводимых вручную, если при вводе данных не было задано направление "развертки". По умолчанию  направления "развертки" нитки хода  ЛЕВО, ПРАВО или ВЕРТ (вертикально), в зависимости от угла, который вектор образует с опорным азимутом. The Диалог "Опорное направление развертки" позволяет изменять азимут опорного направления, вращая его по или против часовой стрелки. 
+Также, опорный азимут можно установить с помощью датчиков компаса устройства Android.<br><p>
 
-It is also possible to fix the "extend" for coming shots to either LEFT or RIGHT, by selecting the appropriate buttons in the dialog.<br><p>
+Кроме того, можно зафиксировать направление "развертки" для последующих измерений установив его на ЛЕВО или ПРАВО, при помощи соответствующих кнопок.<br><p>
 
-<b>Splay extend</b><br>
-The "extend" of splay shots is determined according to that of the leg(s) at the splay station and the azimuth between the splay and the leg. The circle of azimuths is divided in four regions: two "cones" around the directions at 90 degrees with the leg, and the remaining sectors, one around the direction of the leg, the other around the opposite. The <i>Splay vertical threshold</i> setting defines the width of the two cones.<br><p>
+<b>Развертка боковых замеров</b><br>
+Направление "развертки" боковых замеров определяется в соответствии с направлением для вектора(ов) с чьего пикета сделаны боковые замеры до стен и азимутом между вектором нитки хода и боковыми замерами. Вся окружность азимутов рвзделена на четыре сектора: два "конуса" в окрестности угла 90 градусов между боковым замером и вектором и остальные, один в окрестности направления вектора, другой в противоположном направлении. Настрока <i>Вертикальный порог для боковых замеров</i> определяет ширину угловых секторов двух из четырех конусов.<br><p>
 
-When the angle between splay and leg is closer than this value to 90 degrees the splay gets a "vertical extend". Otherwise it gets the same extend as the leg, or the opposite, according to the sector the angle falls in.<br><p>
+Когда угол между боковым замером и вектором ближе к  90 градусам чем значение вертикального порога тогда боковой замер разворачивается "вертикально" на разрезе-развертке. В противном случае он будет развернут также как вектор нитки хода, или в противоположную сторону, в соответствии с тем в какой угловой сектор попадает замер.<br><p>
 
 </body></html>
