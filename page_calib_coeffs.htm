@@ -1,25 +1,25 @@
 <html><body>
 
-<h4>Calibration coefficients</h4>
+<h4>Коэффициенты калибровки</h4>
 
-This dialog displays the 24 coefficients of the calibration linear transformations for the <b>G</b> and the <b>M</b> vectors (12 coefficients each) and 3 coefficients of the non-linear terms (only DistoX2 v. 2.3 or higher).<br><p>
+В этом диалоговом окне отображаются 24 коэффициента калибровчных линейных преобразований для векторов <b>G</b> и <b>M</b> по (2 коэффициентов каждый) и 3 коэффициента нелинейных членов (только Disto X2 v. 2.3 или выше).<br><p>
 
-It is used in three different situations:
+Он используется в трех различных ситуациях:
 <ul>
-<li>The <u>Read</u> button of the <i>Device</i> window display the coefficients read from the DistoX.</li>
-<li>The <u>Read</u> button of the <i>Calibration</i> window displays the coefficients stored in the database</li>
-<li>The <u>Compute</u> button of the <i>Calibration data</i> window displays the computed coefficients</li>
+<li>По кнопке <u>Считать</u> в окне <i>Прибора</i> окно отображает коэффициенты, считанные из DistoX.</li>
+<li>По кнопке <u>Считать</u> в окне <i>Калибровок</i> окно отображает коэффициенты, хранящиеся в базе данных</li>
+<li>По кнопке <u>Вычислить</u> в окне <i>Данных калибровки</i> окно отображает вычисленные коэффициенты</li>
 </ul>
 
-In the last case the dialog displays also an histogram of the residual errors of the calibration data,
-the average error, the std deviation, the maximum error, and the number of iterations taken by the calibration computation.<br><p>
+В последнем случае диалоговое окно также отображает гистограмму остаточных ошибок данных калибровки,
+средную ошибку, стандартное отклонение, максимальную ошибку, и число итераций, затраченное на вычисление калибровки.<br><p>
 
-The error of a calibration data is the angle between the data and the average vector of the group the data belongs to, after having taken the calibration correction into account. The errors are reported in degrees.<br><p>
+Погрешность данных калибровки это угол между измерениями и средним вектором группы к которой принадлежат данные измерения, после учета  калибровочной коррекции. Ошибки в градусах.<br><p>
 
-The histogram has ticks on the horizontal axis at 0.5, 1.0 and 1.5 degrees.<br>
-On the vertical axis the tick marks are 10 and 20.<br><p>
-The yellow vertical line marks 0.5 degrees, and the red line 1 degree.<br>
+Гистограмма имеет штрихи на горизонтальной оси в 0.5, 1.0 и 1.5 градуса.<br>
+На вертикальной оси штрихи на 10 и 20.<br><p>
+Желтая вертикальная линия обозначает 0.5°, а красная линия 1°.<br>
 
-This dialog has a button to <b>write</b> the coefficients to the DistoX.<br><p>
+Это диалоговое окно имеет кнопку <b>Передать в DistoX</b> рассчитвнные коэффициенты.<br><p>
 
 </body></html>
