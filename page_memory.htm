@@ -1,31 +1,31 @@
 <html><body>
 
-<h4>DistoX memory</h4>
+<h4>Память DistoX</h4>
 
-This dialog is opened tapping the <u>Memory</u> button of the <i>Device</i> window.<br><p>
+Это диалоговое окно открывается при нажатии на кнопку <u>Память</u> в окне <i>Приборов</i>.<br><p>
 
 <ul>
-<li><b>Dump</b> reads the content of the DistoX memory. 
-You must enter the initial and final memory location in the two text fields to its right.</li>
-<li>Optional <b>filename</b> to save the dump</li>
+<li><b>Дамп</b> считывает содержимое памяти DistoX. 
+Необходимо ввести начальный и конечный адреса памяти в двух текстовых полей справа.</li>
+<li>Опционально <b>имя файла</b> в который будет сохранен дамп</li>
 </ul>
 <br>
 
-Only for DistoX A3:
+Только для DistoX A3:
 <ul>
-<li><b>Read</b> the memory cursors</li>
-<li><b>Store</b> the memory cursors</li>
-<li><b>Reset</b> a portion of memory, ie, marks it "to-be-downloaded"</li>
+<li><b>Прочитать</b> указатели памяти</li>
+<li><b>Сохранить</b> указатели памяти</li>
+<li><b>Cбросить</b> часть памяти, т.е., пометить ее "для скачивания"</li>
 </ul>
 
-The content of the DistoX memory is displayed in the "Memory list" dialog.<br><p>
+Содержание памяти DistoX отображается в диалоговом окне "Список памяти".<br><p>
 
-Reading the DistoX memory directly is a slow process, and the DistoX must be kept "ON" while doing it.
-It is advisable to read a portion of memory, say 50 entries, at a time.
-Be patient: this operation is carried out in the main gui thread.<br><p>
+Чтение памяти DistoX представляет собой медленный процесс, и DistoX должен быть "включен", в этот момент.
+Желательно считать большую часть памяти, скажем 50 записей одновременно.
+Будьте терпеливы: эта операция выполняется в главном потоке графического интерфейса.<br><p>
 
-If you have entered a filename it is also saved to a dump file (in the "dump" folder).<br><p>
+Если вы ввели имя файла он также сохраняется в файл дампа (в папке "dump").<br><p>
 
-Memory inspection requires some knowledge of the internals of the DistoX: at a minimum the address space, and the way data are stored. You should have read the DistoX documentation before using it.<br><p>
+Просмотр памяти требует некоторого знания о внутренностях DistoX: как минимум, адресного пространства и способа хранения данных. Вы должны прочитать документацию DistoX перед использованием.<br><p>
 
 </body></html>
