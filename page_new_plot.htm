@@ -1,39 +1,38 @@
 <html>
 <body>
 
-<h3>New sketch</h3>
+<h3>Новый абрис</h3>
 
-This dialog is opened tapping the <u>New sketch</u> button in the <i>Sketch list</i> dialog.<br><p>
+Это диалоговое окно открывается при нажвтии на кнопку <u>Новый абрис</u> в окне <i>Список абрисов</i>.<br><p>
 
-It has two text field and a confirmation button.
+В нем есть два текстовых поля и кнопка подтверждения.
 <ul>
-<li><b>name</b> is the name assigned to the sketch.</li>
-<li><b>origin station</b></li>
-<li><b>extended</b> checkbox and <b>projection azimuth</b></li>
+<li><b>Название</b> которое будет присвоено абрису.</li>
+<li><b>начальный пикет</b></li>
+<li>опция <b>разкез-развертка</b> и <b>азимут проекции</b></li>
 </ul><br><p>
 
-You can use either the <b>name</b> suggested by TopoDroid
-(an increasing integer number) or enter a mnemonic name. Each sketch is saved with two files, one for the plan,
-the other for the profile. The filenames are obtained composing the survey name, the sketch name, and a suffix 
-("p" for plan, "s" for profile). For example the sketch "2" of the survey "cave" is saved in the two files
-"cave-2p.th2" and "cave-2s.th2" (if you choose to save the sketch in Therion format).<br><p>
+Вы можете оставить <b>название</b> предложенное программой TopoDroid
+(возрастающие целые числа) либо ввести свое название. Каждый абрис сохраняется в два файла, одмн для плана,
+а другой для разреза-развертки. Имена файлов получаются составлением названия съёмки, названия абриса и суффикса 
+("p" план, "s" разрез). Например абрис "2" в съёмке "cave" будет сохранен в два файла
+"cave-2p.th2" и "cave-2s.th2" (если вы выберите опцию сохранять абрис в формат Therion ).<br><p>
 
-<b>WARNING. The name of the sketch cannot contain the character '/' (slash), which is the pathname separator.</b><br><p>
+<b>ВНИМАНИЕ. Имя абрисв не может содержать символ '/' (слеш), который является разделителем в пути к файлу.</b><br><p>
 
-The <b>origin station</b> defines how the sketch is translated with respect to the survey midline.
-The sketch reference the survey midline defines the sketch scale and rotation, but leaves undefined
-how the drawing is translated with respect to the midline. This uncertanty is resolved by specifying the
-origin station to be at (0,0) in the reference frame of the sketch canvas.<br><p>
+Опция <b>начальный пикет</b> определяет каким образом абрис преобразуеться относительно нитки хода.
+Привязка абриса к нитке хода определяет масштаб абриса и угол поворота, но не влияет на то как рисунок
+преобразуеться относительно нитки хода. Эта неопределенность решается указанием того что
+начальный пикет абриса находиться в точке координат (0,0) в системе отсчета области рисования абриса.<br><p>
 
-The origin station also determines the survey midline <b>data reduction</b> for the sketch. From the sketch point of view
-the midline is built starting from the origin station and continuing as long as data can be attached. The resulting midline
-forms a tree, rooted at the origin station. In order to make the canvas less cluttered, 
-is possible to hide the display of portion of the midline, either
-after a station, or before it (ie, between the origin station and the station).
-This is explained in the "Sketch station" dialog.<br><p>
+Начальный пикет также определяет как происходит <b>прореживание данных</b> нитки хода для абриса. С точки зрения абриса
+нитка хода строиться начиная от "начального пикета" и продолжается пикетами следующими далее за ним. В результате нитка хода
+формирует дерево, растущее из "начального пикета". Для того чтобы сделать экран менее захламленным, 
+можно скрыть часть нтки хода, либо после определенного пикета, либо до него (т.е., между начальной точкой и этим пикетом).
+Это подробнее объясняеться в описании диалога "Свойства пикета на абрисе".<br><p>
 
-If the <b>extended</b> checkbox is checked the sketch profile is extended, and <b>projection azimuth</b> is not shown.
-Otherwise the sketch profile is projected with direction of view the projection azimuth.<br><p>
+Если выбрана опция <b>разрез-развертка</b> то на абрисе разрез будет развернут соответствующим образом, и <b>азимут проекции</b> не отображатеться.
+В противном случае абрис разреза будет спроецирован на  направление заданное азимутом проекции.<br><p>
 
 </body>
 </html>
