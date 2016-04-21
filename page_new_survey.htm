@@ -1,30 +1,30 @@
 <html><body>
 
-<h4>New survey</h4>
+<h4>Новая съёмкаy</h4>
 
-Thsi dialog is opened tapping the <u>Add</u> button in the <i>Main</i> window.<br><p>
+Это диалоговое окно открывается нажатием кнопки <u>Добавть</u> в  <i>Главном</i> окне программы.<br><p>
 
-Information for the new survey:
+Информация о новой топосъёмке:
 <ul>
-<li><b>name</b></li>
-<li><b>date</b></li>
-<li><b>team</b></li>
-<li><b>initial station</b></li>
-<li>magnetic <b>declination</b></li>
-<li>survey <b>description</b></li>
+<li><b>название</b></li>
+<li><b>дата</b></li>
+<li><b>команда</b></li>
+<li><b>номер начального пикета</b></li>
+<li>магнитное <b>склонение</b></li>
+<li><b>описане</b> съёмки</li>
 </ul>
 <br><p>
 
-The <b>name</b> is mandatory. It must be unique in the database. The survey names are used to list surveys in the main window and TopoDroid distinguishes surveys by their name (although each survey has a unique numerical id in the database).<br>
-<b>The name of the survey cannot contain the character '/' (slash), which is the pathname separator.</b><br><p>
+Поле <b>название</b> должно быть обязтельно заполнено. Оно должно быть уникальным в базе данных. Названия съёмок используются для отображения списка съёмок в главном окне и TopoDroid идентифицирует съёмки по их имени (хотя каждая съёмка имеет уникальный цифровой идентификатор в базе данных).<br>
+<b>Название cъёмкт не может содержать символ  '/' (слеш), который служит разделителем в пути к файлу.</b><br><p>
 
-The <b>date</b> is written with format "yyyy.mm.dd". For example January 6, 2015 is "2015.01.06". It is preset to the current date.<br><p>
+ <b>Дата</b> вводится в формате "гггг.мм.дд". Например  6 Января 2015 будет "2015.01.06". Автоматически подставляется текущая дата.<br><p>
 
-<b>Team</b> and <b>description</b> are empty (unless you have set a default team in the app settings). They can safely be left so, although it is a good practice to take the time to fill them.<br><p>
+<b>Команда</b> съёмщиков и <b>описание</b> по умолчанию пусты (если вы не установили команду по умолчанию в настройках приложения). Можно оставить эти поля пустыми, но лучше потратить немгого времени на их заполнение.<br><p>
 
-The <b>magnetic declination</b> is 0.0 by default. If you know it you can enter it here, otherwise you can look it up in the web after you have found the coordinates of a fixed point (say, the cave entrance) with the GPS [A].<br><p>
+<b>Магнитное склонение</b> по умолчагтю равно 0.0 . Если вы знаете значение то можете ввести его в это поле, если не згаете, то можете найти его в интернете позже по координатам привязанной GPS точки (обычно вход в пещеру)  [A].<br><p>
 
-<b>Save</b>: the new survey name is added to the database.<br>
-<b>Open</b>: saves and starts the <i>Shot list</i> activity immediately.<br><p>
+<b>Сохранить</b>: новую съёмку и добавить ее в базу.<br>
+<b>Открыть</b>: сохраняет съёмку и сразу открывает <i>Таблицу пикетов</i>.<br><p>
 
 </body></html>
