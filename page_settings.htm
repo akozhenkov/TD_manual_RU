@@ -1,138 +1,138 @@
 <html><body>
-<h4>TopoDroid settings</h4>
+<h4>Настройки TopoDroid</h4>
 
-<b>GENERAL SETTINGS</b><br>
+<b>ОБЩИЕ НАСТРОЙКИ</b><br>
 <ul>
-<li>Work directory. Default "unset" (ie "TopoDroid")</li>
-<li>Text size >= 1. Default 14</li>
-<li>Buttons size {small, big}. Default small</li>
-<li>Activity level {basic,normal,advanced,experimental}. Default normal</li>
-<li>Cosurveying service. Default NO</li>
-<li>Language {en,es,fr,de,it,ru,bg}. Default "unset" (ie locale)</li>
+<li>Рабочая директория. По умолчанию "не задана" (т.е. используеться "TopoDroid")</li>
+<li>Размер текста >= 1. По умолчанию 14</li>
+<li>Размер кнопок {маленькие, большие}. По умолчанию маленькие</li>
+<li>Уровень функционала {базовый,нормальный,продвинутый,эксперементальный}. По умолчанию нормальный</li>
+<li>Сервис совместной топосъёмки. По умолчанию ВЫКЛ</li>
+<li>Язык {en,es,fr,de,it,ru,bg}. По умолчанию "не задан" (язык системы)</li>
 </ul><br><p>
 
-<b>SURVEY SETTINGS</b><br>
+<b>НАСТРОЙКИ СЪЁМКИ</b><br>
 <ul>
-<li>Team. Default "unset"</li>
-<li>Survey stations naming policy {none, splay+fore, splay+back, fore+splay, back+splay, back+splay+fore}. Default "splay+fore".</li>
-<li>Station names {alphanumeric,numeric}. Default alphanumeric</li>
-<li>Initial station name. Default "unset"</li>
-<li>Photo thumbnails size [80,400]. Default 200 pxl</li>
+<li>Группа. По умолчанию "не задано"</li>
+<li>Порядок наименования пикетов {нет, ЛПВН+след пикет, ЛПВН+пред пикет, след пикет+ЛПВН, пред пикет+ЛПВН, пред пикет+ЛПВН+след пикет}. По умолчанию "ЛПВН+след пикет".</li>
+<li>Номера пикетов {буквенно-цифровые,цифровые}. По умолчанию буквенно-цифровые</li>
+<li>Номер начального пикета. По умолчанию "не задано"</li>
+<li>Размер миниатюры фото [80,400]. По умолчанию 200 пикселей</li>
 </ul>
-UNITS
+ЕДИНИЦЫ ИЗМЕРЕНИЯ
 <ul>
-<li>Length units {m,ft}. Default m</li>
-<li>Angle units {deg,grad}. Default deg</li>
-<li>Sketch grid units {m,yd}. Default m</li>
+<li>Единицы длинны {метры, футы}. По умолчанию метры</li>
+<li>Единицы углов {градусы, грады}. По умолчанию градусы</li>
+<li>Единицы шага сетки {метры, ярды}. По умолчанию метры</li>
 </ul>
-SHOTS
+ПИКЕТЫ
 <ul>
-<li>Leg shot closeness > 0 [percent]. Default 0.05 (5%)</li>
-<li>Minimum number of shots per leg >=2. Default 2</li>
-<li>Limit for splay extend "vertical" [0,90]. Default 10 deg</li>
-<li>Leg V threshold [0,90]. Default 80 deg</li>
-<li>Settable "extend" reference. Default NO</li>
-<li>Loop closure. Default NO</li>
-<li>Backsight in user entered shot dialog. Default NO</li>
-<li>Magnetic anomaly compensation. Default NO</li>
-<li>Shot direction delay (timer). Default 10 s</li>
-<li>Shot direction timer volume [10,100]. Default 50 percent</li>
+<li>Близость замеров между собой > 0 [проценты]. По умолчанию 0.05 (5%)</li>
+<li>Минимальное число замеров векторе >=2. По умолчанию 2</li>
+<li>Порог для развертки боковых замеров "вертикальный" [0,90]. По умолчанию 10 градусов</li>
+<li>Порог для развертки вертикальной развертки векторов [0,80]. По умолчанию 80 градусов</li>
+<li>Устанавливамый азимут "развертки". По умолчанию нет</li>
+<li>Закрывать петли. По умолчанию нет</li>
+<li>Поле для ввода обратного замера вручную. По умолчанию нет</li>
+<li>Компенсация магнитных аномалий. По умолчанию нет</li>
+<li>Таймер задержки измерения. По умолчанию 10 с</li>
+<li>Звук таймера задержки измерения [10,100]. По умолчанию 50 %</li>
 </ul>
-LOCATION
+МЕСТОПОЛЖЕНИЕ
 <ul>
-<li>Location units {ddmmss, dec.deg}. Default ddmmss</li>
+<li>Единицы координат {ггммсс, доли градусов}. По умолчанию ггммсс</li>
 </ul>
-ACCURACY
+ТОЧНОСТЬ
 <ul>
-<li>Accel. threshold > 0. Default 400</li>
-<li>Magn. threshold > 0. Default 300</li>
-<li>Dip threshold > 0. Default 3 deg</li>
+<li>Ускорение. порог > 0. По умолчанию 400</li>
+<li>Магнитизм. порог > 0. По умолчанию 300</li>
+<li>Угловой порог > 0. По умолчанию 3 градуса</li>
 </ul>
 <br><p>
 
-<b>SKETCH SETTINGS</b><br>
+<b>НАСТРОЙКИ АБРИСОВ</b><br>
 <ul>
-<li>Drawing tool picker {recent,list,grid}. Default recent</li>
-<li>Recent tool number {3, 4, 5, 6}. Default 4</li>
-<li>Side drag. Default NO</li>
-<li>Zoom controls {off,temporary,permanent}. Default permanent</li>
-<li>Check dangling shots. Default NO</li>
-<li>Save areas in xtherion-"style". Default NO</li>
+<li>Панель выбор инструментов рисования {недавние,список,сетка}. По умолчанию недавние</li>
+<li>Кол-во недавних инструментов {3, 4, 5, 6}. По умолчанию 4</li>
+<li>Перетаскивание за край. По умолчанию нет</li>
+<li>Кнопки зума {выкл,временно,постоянно}. По умолчанию постоянно</li>
+<li>Проверять на не присоединенные пикеты. По умолчанию нет</li>
+<li>Сохранять области в xtherion-"style". По умолчанию нет</li>
 </ul>
-POINT TOOLS
+ИНСТРУМЕНТЫ ТОЧКИ
 <ul>
-<li>Non-zoomed point icons. Default NO</li>
-<li>Point tools scale. Default 1.2</li>
-<li>Labels size. Default 24 pxl</li>
+<li>Немасштабируемые символы точек. По умолчанию нет</li>
+<li>Масштаб инструментов точек. По умолчанию 1.2</li>
+<li>Размер символов. По умолчанию 24 пикселя</li>
 </ul>
-LINE TOOLS
+ИНСТРУМЕНТЫ ЛИНИИ
 <ul>
-<li>Lines width (N.B. wall line are twice this). Default 1 pxl</li>
-<li>Line style {Bezier,fine,normal,coarse}. Default normal</li>
-<li>Minimum distance between line points. Default 10 pxl</li>
-<li>Secton lines "direction tick" size [1,20]. Default 8 [x unit]</li>
-<li>Area border visibility. Default YES</li>
-<li>Continuation {join,touch}. Default touch</li>
-<li>Bezier line accuracy. Default 1</li>
-<li>Bezier line corner threshold. Default 20</li>
+<li>Толщина линий (толщина линий стен в два раза больше ). По умолчанию 1 пиксель</li>
+<li>Тип линий {Безье,точные,нормальные,грубые}. По умолчанию нормальные</li>
+<li>Минимальное расстояние между точками линии. По умолчанию 10 пикселей</li>
+<li>Размер "штриха направления" у линий поперечного сечения [1,20]. По умолчанию 8 [x unit]</li>
+<li>Видимость границы области. По умолчанию да</li>
+<li>Продолжение линий {соединять,совмещать}. По умолчанию совмещать</li>
+<li>Точность кривых безье. По умолчанию 1</li>
+<li>Угловой порог кривых безье. По умолчанию 20</li>
 </ul>
-SKETCH ITEMS
+ЭЛЕМЕНТЫ АБРИСА
 <ul>
-<li>Survey lines width [0.5,10]. Default 1 pxl</li>
-<li>Station names size. Default 24 pxl</li>
-<li>Green dots radius [0.5,100]. Default 5 pxl</li>
-<li>Selection radius >= 0. Default 24</li>
-<li>Splay plan-view threshold [0,90]. Default 80 deg</li>
-<li>Dashed splay clino threshold [0,90]. Default 50 deg</li>
-<li>Cross-section H threshold [0,90]. Default 70 deg</li>
+<li>Толщинан нитки хода [0.5,10]. По умолчанию 1 пиксель</li>
+<li>Размер номеров пикетов. По умолчанию 24 пикселя</li>
+<li>Радиус зеленых точек [0.5,100]. По умолчанию 5 пикселей</li>
+<li>Радиус выбора >= 0. По умолчанию 24</li>
+<li>Порог угла для показа боковаого замера в плане [0,90]. По умолчанию 80 градусов</li>
+<li>Порог угла для показа боковаого замера прерывистой [0,90]. По умолчанию 50 градусов</li>
+<li>Порог угла для горизонтальных поперечных сечений [0,90]. По умолчанию 70 градусов</li>
 </ul>
-AUTO-WALLS
+АВТО-СТЕНЫ
 <ul>
-<li>Walls type {none,convex}. Default none</li>
-<li>Splay plan clino. Default 70 deg</li>
-<li>Splay profile clino. Default 45 deg</li>
-<li>Separation. Default 0.1 m</li>
-<li>Concavity. Default 0.1 </li>
-<li>Step. Default 1 m</li>
+<li>Тип стен {обычный,выпуклый}. По умолчанию обычный</li>
+<li>Порог угла для боковаого замера в плане. По умолчанию 70 градусов</li>
+<li>Порог угла для боковаого замера в разрезе. По умолчанию 45 градусов</li>
+<li>Сепарация. По умолчанию 0.1 м</li>
+<li>Вогнутость. По умолчанию 0.1 </li>
+<li>Шаг. По умолчанию 1 м</li>
 </ul>
 <br><p>
 
-<b>IMPORT/EXPORT SETTINGS</b><br>
+<b>НАСТРОЙКИ ИМПОРТА/ЭКСПОРТА</b><br>
 <ul>
-<li>PocketTopo color map</li>
-<li>Estimate LR extend on import, Default YES</li>
-<li>Default data export type {th,svx,dat,srv,top,tro,dxf,svg,csv} default th</li>
-<li>Add stations to Therion scraps. Default YES</li>
-<li>cSurvey station prefix. Default NO</li>
-<li>Survex line termination {Linux,Windows}. Default Linux</li>
-<li>Survex splays TO station. Default NO</li>
-<li>Survex LRUD. Default NO</li>
-<li>CSV length units {m,ft}. Default meters</li>
-<li>PNG resolution [0.5, 10]. Default 1.5 [x200 pxl]</li>
-<li>PNG background color (RGB in 0-100). Default "0 0 0" [black]</li>
-<li>DXF sketch scale. Default 1</li>
-<li>AutoCAD version {6,12}. Default 6</li>
+<li>Соответствие цветов PocketTopo</li>
+<li>Рассчитыватьразвертку Л П при импорте, По умолчанию да</li>
+<li>Формат экспорта по умолчанию {th,svx,dat,srv,top,tro,dxf,svg,csv} По умолчанию th</li>
+<li>Добавлять пикеты на скарапы Therion. По умолчанию да</li>
+<li>Префикс пикетов в  cSurvey. По умолчанию нет</li>
+<li>Окончание строки для Survex {Linux,Windows}. По умолчанию Linux</li>
+<li>Добавлять пикет ДО в боковые замеры Survex. По умолчанию нет</li>
+<li>Survex ЛПВН. По умолчанию нет</li>
+<li>CSV единицы длинны {метры,футы}. По умолчанию метры</li>
+<li>PNG разрешение [0.5, 10]. По умолчанию 1.5 [x200 пикселей]</li>
+<li>PNG цвет фона (RGB in 0-100). По умолчанию "0 0 0" [черный]</li>
+<li>DXF масштаб абриса. По умолчанию 1</li>
+<li>AutoCAD версия {6,12}. По умолчанию 6</li>
 </ul><br><p>
 
-<b>DEVICE SETTINGS</b><br>
+<b>НАСТРОЙКИ УСТРОЙСТВА</b><br>
 <ul>
-<li>Check if BT is enabled. Default YES</li>
-<li>Connection data mode {on-demand,continuous}. Default on-demand</li>
-<li>Auto reconnect (in continuous mode). Default FALSE</li>
-<li>BT socket type {normal,insecure}. Default normal</li>
-<li>Z6 workaround. Default YES</li>
-<li>Connection setup retries >= 0. Default 0</li>
-<li>Autopairing. Default YES</li>
+<li>Проверка блютуф при старте. По умолчанию да</li>
+<li>Режим подключения {по требованию,постоянный}. По умолчанию по требованию</li>
+<li>Авто переподключение (в непрерывном режиме). По умолчанию нет</li>
+<li>BT тип подключения {нормальный,небезопасный}. По умолчанию нормальный</li>
+<li>решение для Z6. По умолчанию да</li>
+<li>Кол-во попыток подключения >= 0. По умолчанию 0</li>
+<li>Автосопряжение. По умолчанию да</li>
 </ul><br><p>
 
-<b>CALIBRATION SETTINGS</b><br>
+<b>НАСТРОЙКИ КАЛИБРОВКИ</b><br>
 <ul>
-<li>Group policy {4x4+M,Nx4,distance). Default Nx4
-<li>Group distance threshold. Default 40 [deg]</li>
-<li>Calibration epsilon. Default 0.000001</li>
-<li>Calibration maximum iterations. Default 200</li>
-<li>Show calibration raw data. Default NO</li>
-<li>Calibration algo {auto,linear,non-linear}. Default auto</li>
+<li>Политика группировки {4x4+по 1му,по 4ре,расстояние). По умолчанию по 4ре
+<li>Порог расстояния в группе. По умолчанию 40 [градусов]</li>
+<li>Калибровка эпсилон. По умолчанию 0.000001</li>
+<li>Максимальное кол-во итераций калибровки. По умолчанию 200</li>
+<li>Показывать сырые калибровочные данные. По умолчанию нет</li>
+<li>Алгоритм калибровки {авто,линейный,нелинейный}. По умолчанию авто</li>
 </ul>
 
 </body></html>
