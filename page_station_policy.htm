@@ -1,18 +1,18 @@
 <html><body>
 
-<h4>Station naming policies</h4>
+<h4>Схема нумерации пикетов</h4>
 
-When you download data TopoDroid can automatically assign them station names. A repeated measurement is considered a leg shot, the others are splay shots.  If you stick to a convention taking measurements TopoDroid automatic station naming can be very handy. TopoDroid supports a number of conventions to automatically assign stations to shots. You can select the one that fits your habits through the settings.
+При загрузке данных TopoDroid может автоматически присваивать им номера пикетов. Повторное измерение считается обычным замером, остальные боковыми замерами.  Если вы будете придерживаться системы выполняя измерений то автоматическое наименование пикетов TopoDroid  может быть очень удобным. TopoDroid поддерживает ряд последовательностей для автоматического назначения номеров пикетов измерениям. Вы можете выбрать ту, которая соответствует вашим привычкам через настройки.
 <ul>
-<li>at the "From" station: you take splays first and then forward leg shot(s). This is the default convention.</li>
-<li>at the "From" station: you take the forward leg shot(s) first, and then the splays</li>
-<li>at the "To" station: you take splays first and then backward leg shot(s)</li>
-<li>at the "To" station: you take backward leg shot(s) first and then splays</li>
-<li>at a station: you take the backshot to the previous station, next the splay shots, and finally the forward shot to the next station.</li>
+<li>на пикете "ОТ" : вы сначала делаете замеры до стен, а потом замер на следующий пикет(ы). Эта схема используется по умолчанию.</li>
+<li>на пикете "ОТ" : вы сначала делаете замер на следующий пикет(ы), а потом замеры до стен</li>
+<li>на пикете "ДО" : вы сначала делаете замеры до стен, а потом замер на предыдущий пикет</li>
+<li>на пикете "ДО" : вы сначала делаете замер на предыдущий пикет, а потом замеры до стен</li>
+<li>на пикете: вы сначала делаете замер на предыдущий пикет, потом замеры до стен, а потом замер на следующий пикет.</li>
 </ul><br><p>
 
-A survey with compensation of the local magnetic anomaly must use the last policy.<br>
-Examples of the five conventions (shots takes at the same station are grouped in parenthesis):
+Съёмки с компенсацией локальной магнитной аномалии должны использовать последнюю схему.<br>
+Примеры схем (замеры, снятые на одном пикете сгруппированы в скобках):
 <ul>
 <li> ... (1-. 1-. 1-. 1-2) (2-. 2-. 2-3) ... </li>
 <li> ... (1-2 1-. 1-. 1-.) (2-3 2-. 2-.) ... </li>
@@ -21,7 +21,7 @@ Examples of the five conventions (shots takes at the same station are grouped in
 <li> ... (2-1 2-. 2-. 2-3) (3-2 3-. 3-. 3-4) ... </li>
 </ul><br>
 
-Sequence a-b-c-d for the first (forsight) and the third (backsight) policies.<br>
+Порядок a-b-c-d для первой (прямой замер) и третьей (обратный замер) схем нумерации.<br>
 <img src="survey_policy.png">
 <br>
 
