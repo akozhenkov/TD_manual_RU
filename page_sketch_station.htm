@@ -1,30 +1,31 @@
 <html><body>
 
-<h4>Sketch station</h4>
+<h4>Пикет на абрисе</h4>
 
-This dialog has four actions:
+Этот диалог откроется если выбрать пикет на абрисе в режиме поточечного редактирования и нажать кнопку "примечание".
+В нем есть четыре кнопки:
 <ul>
-<li>make the station "current", ie, continue the survey from this station.</li>
-<li>hide the midline display "after" the station</li>
-<li>hide the midline display "before" the station</li>
-<li>toggle the display of the splay shots at the station</li>
+<li>сделать выбранный пикет "текущим", т.е. продолжить съёмку с данного пикета.</li>
+<li>скрыть нитку хода "после" этого пикета</li>
+<li>скрыть нитку хода "до" этого пикета</li>
+<li>переключить показ боковых замеров на этом пикете</li>
 </ul>
 
 
-<b>Current station</b><br>
-The "current" station is where the next downloaded shots will be attached. When a leg is downloaded (or inserted) the new station becomes the "current" station. By changing the "current" station you can continue surveying from a station in the middle of the survey.<br><p>
+<b>Текущий пикет</b><br>
+"Текущий пикет" это пикет который будет выбран в качестве пикета ОТ для сдедующего скачанного измерения. После скачивания следующего замера (или ручного ввода) новый пикет становиться  "текущим". Меняя "текущий" пикет вы можете продолжить съемку со пикета в середине нитки хода.<br><p>
 
-<b>Midline hiding</b><br>
-The display of the midline can be limited in a number of ways by editing a station properties ("note" buttons in "edit" mode),
+<b>Скрытие нитки хода</b><br>
+Показ нитки хода может быть ограничен в рядом способов путем редактирования свойств пикета (кнопка "примеания" в режиме "поточечного редактирования"),
 <ul>
-<li>show/hide the splays at the station: with this option the splays at the station are shown event if in general splays are not displayed.</li>
-<li>show/hide stations before the station ("hiding" station): TopoDroid carries out a data reduction for each sketch starting from the sketch origin station. This option hides/shows the piece of midline between the origin station and the station.</li>
-<li>show/hide stations after the station ("barrier" station): this option hides/shows the piece of midline beyod the station.</li>
+<li>показать/скрыть боковые замеры: при помощи этой кнопки можно отобразить боковые замеры на этом пикете даже если глобально их отображение отключено.</li>
+<li>Скрыть/показать нитку хода до этого пикета: TopoDroid может уменьшить количество отображаемых данных на экране абриса скрыв нитку хода начиная от исходной точки абриса до текущего пикета.</li>
+<li>Скрыть/показать нитку хода после этого пикета: эта опция скрывает/отображает нитку хода после данного пикета.</li>
 </ul>
 
-This feature is useful if when the survey is complicated or goes over itself. In this case you may want to see only a part of the midline.<br><p>
+Эта функция полезна, если когда топосъёмка очень разветвленная или проходит над/под собой. В этом случае вы можете отобразить только часть нитки хода.<br><p>
 
-Stations that limit the midline are colored in blue ("hiding" stations) or red ("barrier" stations).<br><p>
+Пикеты, которые ограничивают показ нитки хода окрашены в синий цвет ( пикет "до которого" сктыта нитка ) или красный цвет ( пикет "после" которого скрыта нитка).<br><p>
 
 Stations beyond a "barrier" station, are not automatically saved as Therion station points. Therefore, by choosing the sketch origin station inside the scrap and marking stations as barrier you can avoid spurious stations in the scrap file.<br><p>
 
