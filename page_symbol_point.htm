@@ -1,26 +1,26 @@
 <html><body>
-<h4>POINT TOOLS</h4>
+<h4>ИНСТРУМЕНТ ТОЧЕК</h4>
 
 
-The "point" tools are defined in text files.<br><p>
+Инструменты "области" заданы в текстовых файлах.<br><p>
 
-Two point tools, "user" and "label" (text), are built in the programs.
-The others are loaded from the TopoDroid subdirectory <i>symbol/point</i>.
-This directory is populated with the point tools packaged in the distribution apk.
-You can delete the tools you do not need, edit the ones you want to change, and
-add new ones that are not provided in the apk.<br><p>
+Два инструмента точек, "пользовательский" и "подпись"(текст), встроены в программу.
+Остальные загружаются из подкаталога TopoDroid <i>symbol/point</i>.
+Этот каталог заполняется инструментами точек, упакованных в дистрибутив APK.
+Вы можете удалить инструменты, которые вам не нужны, редактировать те, которые вы хотите изменить, и
+добавлять новые, не вошедшие в APK.<br><p>
 
-The point tool file contains lines specifying the property of the drawing tool.
+Файл инструмента точка содержит данные, определяющие свойства инструмента рисования.
 <ul>
-<li>"symbol point" [mandatory]</li>
-<li>"name NAME", where NAME is the area default name [mandatory]</li>
-<li>translated names, eg, "name-es ..." [optional]</li>
-<li>"th_name NAME", where NAME is the Therion name, and must be the same as the filename [mandatory]</li>
-<li>"color rgb" (rgb in hex format) [mandatory]</li>
-<li>"close-horizontal" [optional, false if missing]</li>
-<li>"orientation FLAG" [optional, false if missing, true if FLAG is '1' or 'yes']</li>
-<li>"has_text FLAG" [optional, false if missing, true if FLAG is '1' or 'yes']</li>
-<li>"csurvey LAYER TYPE CATEGORY"</li>
+<li>"symbol point" [обязательный]</li>
+<li>"name NAME", где NAME название точкм по умолчанию [обязательный]</li>
+<li>переводы названия, т.е. "name-es ..." [не обязалельный]</li>
+<li>"th_name NAME", где NAME это название в Therion, и должно совпадать с именем файла [обязалельный]</li>
+<li>"color rgb" (rgb цвет в шестнадцатиричном формате) [обязалельный]</li>
+<li>"close-horizontal" [optional, false if missing???ошибка]</li>
+<li>"orientation FLAG" [не обязательный, не ориентируемо если нет флага,ориентируемо если FLAG '1' или 'yes']</li>
+<li>"has_text FLAG" [не обязательный, нет подписи если нет флага, есть подпись если FLAG  '1' или 'yes']</li>
+<li>"csurvey LAYER TYPE CATEGORY" категория инструмента csurvey</li>
 <li>"path" begins the point symbol path. This is specified with the following commands
 <ul>
 <li>"moveTo X Y"</li>
@@ -33,7 +33,7 @@ The point tool file contains lines specifying the property of the drawing tool.
 <li>"endsymbol"</li>
 </ul>
 
-<b>Orientation</b><br>
-If the attribute "orientation" is set, the point symbol can be rotated.<br><p>
+<b>Ориентация</b><br>
+Если атрибут "ориентация" установлен, символ точки может быть повернут.<br><p>
 
 </body></html>
