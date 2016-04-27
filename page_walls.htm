@@ -1,28 +1,28 @@
 <html><body>
 
-<h4>Auto-walls</h4>
+<h4>Авто-стены</h4>
 
-At experimental level the "autowall" button is present in the shot edit dialog.<br><p>
+В эксперементальном уровне функционала кнопка "авто-стены" доступна в диалоге редактирования замера.<br><p>
 
-Auto-walls is a technique to quickly get a rough map of a simple cave, consisting only of the walls outline.
-It is not a substitute for a good sketch of the cave.<br><p>
+Авто-стены являются инструментом, чтобы быстро получить приблизительную карту простой пещеры, состоящий только из контура стен.
+Это не является заменой для хорошего абриса пещеры.<br><p>
 
-With auto-walls you tell TopoDroid to draw walls to the right and left of a shots interpolating through the end-points of the splays. At the moment there is only one mechanism, namely "convex" walls. A polyline is traced connecting the outermost end-points of the splays. To create a wall there must be at least one splay end-point on the side of the shot.<br><p>
+При помощи авто стен вы говорите TopoDroid нарисовать стены справа и слева от пикетов интерполируя через концы боковых замеров. На данный момент существует только один механизм интерполяции, а именно "выпуклые" стенки. Ломаная линия соединяющая крайние концы боковых замеров. Для того, чтобы создать стену, должен быть, по крайней мере один боковой замер в сторону от нитки хода.<br><p>
 
-Auto-walls applies to one shot at a time, and it does not take into account the nearby shots. Therefore it is likely that an auto-wall "enters" the nearby piece of gallery or misses it. You should then edit the auto wall adjusting for these drawbacks, ie, inserting points for the missing pieces and deleting, or moving, points that fall in the nearby gallery.<br><p>
+Авто-стены работает с одним вектором, и не принимает во внимание соседние замеры. Поэтому вполне вероятно, что авто-стена бедет "резать" соседний кусок галереи или пропустит его. После этого вы должны отредактировать авто стену чтобы убрать эти недостатки, то есть вставить точки для недостающих частей и удалить или переместить, точки, которые попадают в соседную галерею.<br><p>
 
-Through the settings you can specify a limit to the inclination of the splays to take into account, and the amount of allowed concavity.<br><p>
+С помощью настроек вы можете указать ограничение угла наклона используемых боковых замеров и установить допустимую вогнутость.<br><p>
 
 <ul style="margin-top:0; margin-bottom:0">
-    <li><i>Walls type</i>: the type of auto-walls. Default is "none" (disabled).</li>
-    <li><i>Splay plan threshold</i>: inclination limit on splays used in auto-walls in the plan view.</li>
-    <li><i>Splay profile threshold</i>: minimum inclination of splays used in auto-walls in the profile view.</li>
-    <li><i>Point separation</i>: minimum separation of splay points along the shot direction. If two splays are closer than this value only the splay with largest distance from the shot is used.</li>
-    <li><i>Point step</i>: maximum distance along the walls between two line-points. If a wall segment connecting two splays is too long it is splitted interpolating points in the between</li>
-    <li><i>Concavity</i>: amount of accetped concavity.</li>
+    <li><i>Тип стен</i>: тип кторый будет использован в авто-стенах. По умолчанию "нет" (выключен).</li>
+    <li><i>Порог угла боковых замеров в плане</i>: предел угла боковых замеров, используемых для авто-стен в плане.</li>
+    <li><i>Порог угла боковых замеров в разрезе</i>: минимальный наклон боковых замеров используемых для авто-стен в разрезе.</li>
+    <li><i>Расстояние между точками</i>: минимальное расстояние конечных точек боковых замеров вдоль направления вектора. Если две точки ближе, чем это значение то используются только боковые замеры с самым большим расстоянием от нитки хода.</li>
+    <li><i>Шаг точек</i>: максимальное расстояние между двумя точками на линии стен. Если сегмент стены между двумя концами боковых замеров слишком длинный, то он разделяется на сегменты</li>
+    <li><i>Вогнутость</i>: допустимая степень вогнутости.</li>
 </ul><br><p>
 
-<i>Warning</i><br>
-If you draw auto-walls twice for the same shot you get two copies of the wall line(s).
+<i>ВНИМАНИЕ</i><br>
+Если вы рисуете авто-стены дважды для одного и то же замера вы получите две копии линий стенки (s).
 
 </body></html>
