@@ -1,40 +1,40 @@
 <html><body>
 
-<h4>Drawing tools palette</h4>
+<h4>Инструменты для рисования</h4>
 
-The drawing tools bundled in the program include 9 areas, 16 lines and 46 points.<br><p>
+Инструментами рисования в комплекте программы включают в себя 9 областей, 16 линий и 46 точек.<br><p>
 
-When the app starts the first time it installs the drawing tools files in the "symbol" directory. There are files for points (iconic symbols, like "entrance", or "stalagmite"), lines (like "wall", or "pit"), and areas (regions shown with a transparent color). If you have upgraded the app to a new version it asks if you want to reinstall the drawing tools.<br><p>
+Когда приложение запускается в первый раз, оно устанавливает файлы инструментов рисования в каталог "symbol". Есть файлы для точек (знаков и символов, таких как "вход" или "сталагмит"), линий (например, "стена", или "яма"), а также облачтей (регионы, показанные  полупрозрачным цветом). Если вы обновили приложение для новой версии он спрашивает, хотите ли вы  переустановить инструменты рисования.<br><p>
 
-When the drawing tools are updated, TopoDroid asks you if you want to overwrite the existing files, before installing the new version of the tools.<br><p>
+Когда инструменты рисования обновляются, TopoDroid спросит вас,хотите ли вы заменить существующие файлы, для установки новой версии инструментов.<br><p>
 
 
 
-It is likely you do not need many of them, or maybe you need different ones. You can customize the drawing tools and the way you select them in four ways:
+Вполне вероятно, что вам не нужны многих из них, или может быть, вам нужны совсем другие. Вы можете настроить инструменты рисования и способ их выбора четырьмя способами:
 <ul>
-<li>with the choice of drawing tool dialog</li>
-<li>at the level of the sketch</li>
-<li>at the level of the project (directory</li>
-<li>on the filesystem</li>
+<li>через диалог выбора инструмента рисования</li>
+<li>на уровне абриса</li>
+<li>на уровне проекта (директории)</li>
+<li>на уровне файловой системы</li>
 </ul>
 
-The drawing tool dialog is the inteface through which you select the tool with which you draw next. There are three different interfaces,
+Диалог инструментов для рисования представляет собой интерфейс, через который вы выбираете инструмент, с помощью которого вы будете рисовать. Есть три различных интерфейса,
 <ul>
-<li>most-recently used tools [default]</li>
-<li>a list of the tools with their names</li>
-<li>the tools symbols arranged on a grid</li>
+<li>недавно использованные инструменты [по умолчанию]</li>
+<li>список инструментов с их названиями</li>
+<li>символы инструментов, расположенные на сетке</li>
 </ul>
 
-Each sketch carries its own palette.  When you close the sketch it is saved with a header listing the enabled tools. When you reopen it, the palette is set to the sketch palette. If the sketch contains items which are not in the palette they are added. If a item is not among the drawing tools it is replaced with the "user" tool. The "user" tools (point, line and area) are always in the palette.<br><p>
+Каждый абрис запоминает собственную палитру. При закрытии абриса он сохраняется со списком разрешенных инструментов в заголовке. При повторном открытии этот список устанавливается в палитре абриса. Если абрис содержит элементы, которые не находятся в палитре они добавляются в нее. Если элемент не входит в число инструментов для рисования он заменяется инструментом "пользовательский". Инструмент "пользовательский" (точка, линтя и область) всегда присутствуют в палитре.<br><p>
 
-The sketch palette is specified through the "PALETTE" menu of the sketch window. This opens a dialog that lets you decide which tool enable in the sketch palette. You switch on and off the tools to your need then close the dialog (with the <u>back</u> button) to save the changes. You have to do this independently for points, lines and areas.<br><p>
+Палира инструментов абриса задается через пункт меню "РИСОВАНИЕ"(исправить) в окне абрисов. Это открывает диалог, который позволяет вам решить, какой инструмент включить в набор для этого абриса. Вы включаете инструменты, которые вам нужны затем закрыть диалоговое окно (с помощью кнопки <u>назад</u>) чтобы сохранить изменения. Вы должны сделать это независимо для каждого типа инструментов точек, линий и областей.<br><p>
 
-Except for the "system" tools, TopoDroid loads the drawing tool from files stored in the "symbols" subdirectory of the base "TopoDroid" home. The system tools are the "user" and "label" points, "user" and "wall" lines, "user" and "water" areas. These are always enabled.<br><p>
+За исключением "встроенных" инструментов, TopoDroid загружает все инструменты для рисования из файлов хранящихся в подкаталоге  "symbols" основной папки "TopoDroid". Встроенные или системные инструметны это точки "пользовательский" и "подпись", линии "пользовательский" и "стена", области "пользовательский" и "вода". Они всегда включены.<br><p>
 
-The PALETTE menu of the main window defines the drawing tool files to load. In the coming dialog you select the tools that are loaded.  The list of files to load is saved in the project database. As for the sketch-level palette, you have to do this independently for points, lines, and areas<br><p>
+Пункт меню "РИСОВАНИЕ"(исправить) в главном окне определяет какие файлы инструментов рисования будут загружены. В следующем диалоговом окне вы выбираете инструменты, которые будут загружены.  Список файлов инструментов для загрузки сохраняется в базе данных проекта. Что касается палитры уровня абриса, вы должны сделать это по очереди для точек, линий и областей<br><p>
 
-At a even higher level, namely that of the base "TopoDroid" directory, you can customize the tool files.
-You can modify them, delete those you do not need, and add new ones (for tools not included in the program).
-Even if TopoDroid comes with many drawing tools preinstalled, it can happen that it does not contains the tools you need (or you do not like the one provided). The tool files are plain text files, and you can write your own tool file(s). After you put them in the symbol subdirectories, TopoDroid will see and use them. The syntax of the tool files is described in a page on the speleoapps website.<br><p>
+На еще более высоком уровне, а именно в корневом каталоге "TopoDroid" вы можете настроить файлы инструментов.
+Вы можете изменять их, удалять те что вам не нужны, и добавлять новые (если они не включенны в программу).
+Даже если TopoDroid поставляется с большим количеством предварительно установленых инструментов для рисования, то может случиться так, что он не содержит необходимые вам инструменты (или вам не нравится те что в комплелте). Файлы инструментов являются простыми текстовыми файлами и вы можете написать свой собственный  инструмент. После того, как вы поместите их в подкаталог символов, TopoDroid будет видеть и использовать их. Синтаксис файлов инструментов описан на сайте спелео приложений.<br><p>
 
 </body></html>
