@@ -1,37 +1,38 @@
 <html><body>
 
-<h4>TopoDroid subdirectories</h4>
+<h4>Поддиректории TopoDroid</h4>
 
-Here is some background about how the survey data, the calibration data, and the sketches are stored. You can safely skip the following and the next two sections, and come back to them later if needed.<br><p>
+Вот некоторая информация о том, как хранятся данные съёмки, данные калибровки, а также абрисы. Вы можете смело пропустить этот и следующие два раздела, и вернуться к ним позже, но лучше все таки их прочитать.<br><p>
 
-The app creates its default base directory, named "TopoDroid", in the primary external memory (usually /sdcard). This directory is not removed when you uninstall the app. In this directory the app creates two SQLite databases. The first is "device10.sqlite", where the calibration data, the DistoX informations, and other data are stored. The second is "distox14sqlite" and stores the surveys data. The app also creates subdirectories for the different types of files:
+Приложение создает свой базовый каталог по умолчанию, названный "TopoDroid", в основной внешней памяти устройства (обычно /SDCard). Этот каталог не удаляется при удалении приложения. В этом каталоге приложение создает две базы данных SQLite. Первая "device10.sqlite", где храняться данные калибровок, информация о приборах DistoX и другие данные. Вторая "distox14sqlite" она хранит данные топосъёмаок. Приложение также создает подкаталоги для различных типов файлов:
 <ul>
-<li>bin: DistoX2 firmware files</li>
-<li>csv: CSV text files (exported surveys and calibrations)</li>
-<li>csx: <i>cSurvey</i> files (exported surveys and sketches)</li>
-<li>dat: <i>Compass</i> files (exported surveys)</li>
-<li>dxf: DXF files (exported surveys and sketches)</li>
-<li>dump: DistoX memory dump files</li>
-<li>import: survey files to import (<i>Therion</i>, <i>Compass</i>, <i>VisualTopo</i>, and <i>PocketTopo</i> format)</li>
-<li>kml: <i>GoogleEarth</i> exports [A]</li>
-<li>note: survey annotations text files</li>
-<li>photo: survey pictures (each survey with its own subdirectory)</li>
-<li>plt: <i>OziExplorer</i> track file exports [A]</li>
-<li>png: PNG image files (exported sketches)</li>
-<li>srv: <i>Walls</i> files (exported surveys)</li>
-<li>svg: SVG files (exported sketches)</li>
-<li>svx: <i>Survex</i> files (exported surveys)</li>
-<li>symbol with the drawing tools files (points, lines, areas)</li>
-<li>th: <i>Therion</i> files (exported surveys)</li>
-<li>th2 for <i>Therion</i> scrap files (saved sketches)</li>
-<li>th3 for 3D model files</li>
-<li>tmp: for temporary files. Any file leftover in this directory can be safely deleted.</li>
-<li>top: <i>PocketTopo</i> files (exported surveys)</li>
-<li>tro: <i>VisualTopo</i> files (exported surveys)</li>
-<li>zip: survey ZIP archives (exported and importable)</li>
+<li>bin: файлы прошивок DistoX2</li>
+<li>csv: текстовые файлы CSV (экспортированные съёмки и калибровки)</li>
+<li>cav: файлы <i>Topo</i> (экспортированные съёмки)</li>
+<li>csx: файлы <i>cSurvey</i> (экспортированные съёмки и абрисы)</li>
+<li>dat: файлы <i>Compass</i> (экспортированные съёмки)</li>
+<li>dxf: файлы DXF (экспортированные съёмки и абрисы)</li>
+<li>dump: дампы памяти DistoX</li>
+<li>import: файлы съёмок для импорта (форматы <i>Therion</i>, <i>Compass</i>, <i>VisualTopo</i>, и <i>PocketTopo</i>)</li>
+<li>kml: экспорт в <i>GoogleEarth</i> [A]</li>
+<li>note: текстовые файлы заметок к съёмкам</li>
+<li>photo: фото съёмок (в отдельную папку для каждой съёмки)</li>
+<li>plt: экспорт треков в формате <i>OziExplorer</i> [A]</li>
+<li>png: файлы изображений PNG (экспортированные абрисы)</li>
+<li>srv: файлы <i>Walls</i> (экспортированные съёмки)</li>
+<li>svg: файлы SVG (экспортированные абрисы)</li>
+<li>svx: файлы <i>Survex</i> (экспортированные съёмки)</li>
+<li>symbol: фалы инструментов рисования (точки, линии, области)</li>
+<li>th: файлы <i>Therion</i> (сохраненные съёмки)</li>
+<li>th2: файлы скрапов <i>Therion</i> (сохраненные абрисы)</li>
+<li>th3: файлы 3D моделей</li>
+<li>tmp: временные файлы. Любой файл, оставшийся в этом каталоге могут быть безопасно удален.</li>
+<li>top: файлы <i>PocketTopo</i> (экспортированные съёмки)</li>
+<li>tro: файлы <i>VisualTopo</i> (экспортированные съёмки)</li>
+<li>zip: съёмки в ZIP архивах (экспортированные и импортируемые)</li>
 </ul><br><p>
 
-Some of these subdirectories are used only to store exported files (csx, dat, dxf, png, svx, th, top, tro). Others are used to store data (th2, th3, note, photo). The subdirectory "symbol" contains data files used by the program.
-The subdirectory "zip" is used to store zipped archives as well to read them and uncompress in TopoDroid. When you want to import a survey made with another program (<i>Therion</i>, <i>Compass</i>, <i>VisualTopo</i>, or <i>PocketTopo</i>) you must place it in the subdirectory "import". Finally "bin" is used to store firmware files, both the factory files included in TopoDroid and the firmware dumps read from a DistoX.<br><p>
+Некоторые из этих подкаталогов используются только для хранения файлов на экспорта (csx, dat, dxf, png, svx, th, top, tro). Другие используются для хранения данных (th2, th3, note, photo). Поддиректория "symbol" содержит файлы символов, используемые программой.
+Поддиректория "zip" используется для хранения архивов которые TopoDroid может читать и распаковывать. Если вы хотите импортировать съёмку, сделаннуе в другой программе (<i>Therion</i>, <i>Compass</i>, <i>VisualTopo</i>, or <i>PocketTopo</i>) вы должны поместить файлы в подкаталог "import". Наконец "bin" используется для хранения файлов прошивки, как файлов прошивки, входящих в TopoDroid так и дампов прошивки из DistoX.<br><p>
 
 </body></html>
