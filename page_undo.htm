@@ -2,14 +2,14 @@
 
 <h4>Отменить действие</h4>
 
-TopoDroid имеет возможность отменить/повторить действие при рисовании/стирании/редактировании абрисов. Когда вы рисуете что-то то последне действие ставится в верхней части списка отмены. Undoing amounts to moving the stack pointer down the stack (beside affecting the sketch drawing). Redoing moves the stack pointer up (and add the drawing to the sketch).<br><p>
+TopoDroid имеет возможность отменить/повторить действие при рисовании/стирании/редактировании абрисов. Когда вы рисуете что-то то последне действие ставится в верхней части списка отмены. Отмена перемещает указатель в списке на один пункт вниз (и отменяет последнее действие). Повтор действия перемещает указатель вверх по списку (и снова добавляет нарисованное в абрис).<br><p>
 
-The effect of the "continuation" drawing on the undo stack is that a new line is not created, and the line that has been continued is moved on top of the undo stack.<br><p>
+При включенной опции "продолжения" линии с точки зрения списка отмены создается новая линия, и линия, которая была продолженя двигается вверх очереди отмены.<br><p>
 
-Erase and edit actions can also be undone/redone. However their effect on the stack is not as straightforward as for drawing.<br><p>
+Действия по стиранию и редактированию также могут быть отменены/повторены. Однако их эффект на очередь отмены не такой как у рисования.<br><p>
 
-Erasing is a raster operation while the drawing is made of vector items. The points of the vector items that come under the erased region are removed. This affects the undo stack in two way. Is an item is completely erased (eg, a point item), it is dropped from the stack. Undoing the erase action puts the item back, but at the top of the stack. Erasing the middle of a line remove the line object from the stack and replaces it with two lines that are added on the top of the stack.<br><p>
-For example, erasing can change the position of a line in the undo stack. Erasing the middle of a line drops the line from the stack and puts the two end pieces at the top of the stack. A following "undo" removes the two pieces and puts the line back, however at the top of the stack.<br><p>
+Удаление является операциея с растром, а рисование выполнено из векторных элементов. Точки векторных элементов, которые подпадают под стираемую область будут удалены. Это влияет на очередь отмены двумя способами. Если элемент удален полностью (например точка), он удаляется из списка. Отмена дейсвия удаления помещает элемент назад, но в верхную части списка. Стирание средней части линии удаляе линию из очереди отмены и заменяет ее двумя линиями, котрые помещаються вверх очереди.<br><p>
+Например, стирание может изменить положение лнии в очереди отмены. Стирание середины линии сбрасывает линию из списка и помещает две ее части в верх списка. А следующая за этим "отмена" удаляет два куска и возвращает линию назад, при этом помещая ее вверх списка.<br><p>
 
 
 
