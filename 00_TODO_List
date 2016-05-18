@@ -1,0 +1,23 @@
+Тут находится список того что нужно сделать.
+
+
+1.  Добавить ссылку на page_quick.htm на каждую страницу.
+
+2. Попробовать привести верску к стандарту: 
+
+  Начала файлов следует заменить конструкцией
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>TopoDroid-Главная</title>
+ </head>
+<body>
+
+Элемент <!DOCTYPE> настраивает браузер на работу с определённым типом страницы (http://htmlbook.ru/html/!doctype),
+атрибут charset позволит браузеру правильно выбрать кодировку (http://htmlbook.ru/html/meta/charset),
+а тег <title> отобразить заголовок страницы (http://htmlbook.ru/html/title).
+Для проверки корректности HTML можно использовать валидатор http://validator.w3.org/#validate_by_upload+with_options.
+Я выбирал закладку Validate by File Upload, 
+ставил галочки и явно задавал кодировку (UTF-8) и вид документа (HTML-5 не сработал, поставил HTML-4.01 Strict, 
+но тогда надо менять !DOCTYPE) (если он есть).
