@@ -153,7 +153,8 @@ TopoDroid поддерживает формат <i>PocketTopo</i> как на и
 <u>Note</u>. Sketch DXF export has been verified with VariCAD; compatibility with AutoCAD is not guaranteed.<br><p>
   
 Настройки:<ul style="margin-top=0">
-<li>масштаб  DXF</li>
+<li><u>scale</u> of the DXF</li>
+<li><u>Section-point</u>: if section points are automatically added to section lines, the section drawing is inserted in the export, at the "section" point</li>
 <!--li>AutoCAD version (6 or 12)</li-->
 </ul><p>
 
@@ -161,14 +162,16 @@ TopoDroid поддерживает формат <i>PocketTopo</i> как на и
 Абрисы могут быть экспортированы как SVG файлы.<br><p>
   
 Настройки:<ul style="margin-top=0">
- <li>рисовать сетку при экспорте (размер ячейки в текущих единицах измеренич).</li>
+ <li>рисовать сетку при экспорте (размер ячейки в текущих единицах измерения).</li>
+<li><u>Section-point</u>: if section points are automatically added to section lines, the section drawing is inserted in the export, at the "section" point</li>
+<li><u>auto-stations</u>: if enabled all stations are included in the export, otherwise only the user-chosen stations are included</li>
  </ul><p>
 
 <b>PNG</b> (.png)<br>
 Растровый формат PNG может быть использован для экспорта абрисов.<br><p>
  
 Настройки:<ul style="margin-top=0">
-<li>разрешение картинки (1 означает что 1 m = 40 пикселей).
+<li>разрешение картинки (1 означает что 1 m = 40 пикселей).  The PNG resolution that fits therion th2 export is 5.0.
 Если у системы не достаточно памяти для создания картинки в заданом разрешении, TopoDroid будет понижать разрешение до достижения результата.</li>
 <li>цвет фона. Введите три значения между 0 (черный) и 255 (насыщенный) для красного, зеленого, и голубого соответствнно.</li>
 </ul><p>
