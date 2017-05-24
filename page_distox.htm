@@ -57,21 +57,21 @@
  <li>MEM+FUNC: включить silent mode</li>
  <li>MEM+MINUS: переключть в режим обратных замеров [2.4]</li>
  <li>SMART+MINUS: проверка троекратным измерением</li>
- <li>DIST (with laser on): measure</li>
- <li>CLR: power off</li>
- <li>CLR+SMART: toggle calib. mode</li>
- <li>CLR+MEM: clear unsent memory</li>
- <li>CLR+FUNC: toggle bluetooth</li>
- <li>CLR+MINUS: locked power off</li>
- <li>REF: front reference</li>
- <li>REF+FUNC: back reference</li>
- <li>REF+PLUS: toggle display light</li>
- <li>REF+MINUS: toggle beep</li>
- <li>MEM: distance units</li>
- <li>MEM+SMART: angle units (deg/grad)</li>
- <li>MEM+FUNC: toggle silent mode</li>
- <li>MEM+MINUS: toggle backsight mode [2.4]</li>
- <li>SMART+MINUS: toggle triple-shot check [2.4]</li>
+ <li>DIST (лазер включен): измерение</li>
+ <li>CLR: выключение</li>
+ <li>CLR+SMART: переключить в режим калибровки</li>
+ <li>CLR+MEM: Очистка памяти от неотправленных данных</li>
+ <li>CLR+FUNC: вкл/выкл bluetooth</li>
+ <li>CLR+MINUS: Блокировка клавиш и выключение питания</li>
+ <li>REF: точка отсчета на переднем краю</li>
+ <li>REF+FUNC: точка отсчета на заднем краю</li>
+ <li>REF+PLUS: Подсветка дисплея вкл./выкл.</li>
+ <li>REF+MINUS: Звуковая индикация вкл./выкл.</li>
+ <li>MEM: Переключение единиц измерения расстояния (метры/футы)</li>
+ <li>MEM+SMART: Настройка единиц измерения наклона: градусы/грады</li>
+ <li>MEM+FUNC: «Тихий» режим вкл./выкл.</li>
+ <li>MEM+MINUS: Режим обратного визирования вкл./выкл. [2.4]</li>
+ <li>SMART+MINUS: Проверка троекратным измерением вкл./выкл. [2.4]</li>
  </ul>
  <br><p>
  
@@ -79,75 +79,75 @@
  <ul>
  <li>FUNC+SMART: тип источника питания</li>
  <li>FUNC+CLR+MEM: сброс всех настроек</li>
- <li>DIST+PLUS+MINUS (switching on): режим загрузчика</li>
- <li>FUNC+SMART: change battery type</li>
- <li>FUNC+CLR+MEM: factory reset</li>
- <li>DIST+PLUS+MINUS (switching on): bootloader mode</li>
+ <li>DIST+PLUS+MINUS (при включении): режим загрузчика</li>
+ <li>FUNC+SMART: изменить тип элемента питания</li>
+ <li>FUNC+CLR+MEM: сброс до заводских настроек</li>
  </ul>
  <br><p>
  
+ (*) НЕ ВЫПОЛНЯЙТЕ ИЗМЕРЕНИЯ В ЭТОМ РЕЖИМЕ
  
  доп информация о измерении:<br>
  <ol>
- <li>azimuth, H distance, V distance, distance</li>
- <li>roll, dip</li>
+ <li>азимут, гор. расстояние, верт. расстояние, расстояние</li>
+ <li>разворот, наклон</li>
  <li>M, G</li>
- <li>on-board accel. raw x,y,z (*)</li>
- <li>separate accel. raw x,y,z (*)</li>
- <li>magnetic raw x,y,z (*)</li>
+ <li>встроенный акселерометр. сырые показания x,y,z (*)</li>
+ <li>дополнительный акселерометр. сырые показания x,y,z (*)</li>
+ <li>магнитное поле x,y,z (*)</li>
  </ol>
  <br>
  
  <ol>
- <li>combined accel. x,y,z</li>
- <li>magnetic x,y,z</li>
- <li>on-board accel. x,y,z (*)</li>
- <li>separate accel. x,y,z (*)</li>
+ <li>кобиниованные показания акселерометров. x,y,z</li>
+ <li>магнитное пол x,y,z</li>
+ <li>встроенный акселерометр. x,y,z (*)</li>
+ <li>дополнительный акселерометр. x,y,z (*)</li>
  </ol>
  <br><p>
  
- Device info:<br>
+ Информация об устройстве:<br>
  <ol>
- <li>battery</li>
- <li>hw/fw version, serial number</li>
- <li>display light level (1:10) [2.3]</li>
- <li>endpiece offset (-128:127) [2.3]</li>
+ <li>батарея</li>
+ <li>версия по и прошивки, серийный номер</li>
+ <li>уровень подсветки дисплея (1:10) [2.3]</li>
+ <li>расстояние до конца лапы (-128:127) [2.3]</li>
  </ol>
  <br><p>
  
  <h3>DistoX - A3</h3>
  
  <ul>
- <li>AREA (back ref.): continuous display of azimuth+clino (*)</li>
- <li>AREA+REF (front ref.): continuous display of roll+dip (*)</li>
- <li>AREA*2: firmware version and serial number</li>
- <li>UNITS: toggle display light</li>
- <li>AREA*2+REF*2+CLR: toggle silent mode</li>
+ <li>AREA (т.о. сзади.): постоянный показ азимута и угла (*)</li>
+ <li>AREA+REF (т.о. спереди): постоянный показ разворота и наклона (*)</li>
+ <li>AREA*2: версия по и прошивки, серийный номер</li>
+ <li>UNITS: вкл/выкл подсветки</li>
+ <li>AREA*2+REF*2+CLR: «Тихий» режим вкл./выкл.</li>
  </ul>
- (*) Do not take measurements in this mode
+ (*) НЕ ВЫПОЛНЯЙТЕ ИЗМЕРЕНИЯ В ЭТОМ РЕЖИМЕ
  <br><p>
  
- Two seconds:<br>
+ Долгое нажатие 2с:<br>
  <ul>
- <li>UNITS (in back ref.): distance units</li>
- <li>UNITS (in front ref.): cycle angle units / BT</li>
- <li>MEM*10+UNITS: toggle calib. mode</li>
+ <li>UNITS (т.о. сзади): единицы измерения дины</li>
+ <li>UNITS (т.о. спереди): единицы измерения угла / BT</li>
+ <li>MEM*10+UNITS: переключить в режим калибровки</li>
  </ul>
  <br>
  
- Five seconds:<br>
+ Долгое нажатие 2с<br>
  <ul>
- <li>CLR+PLUS: toggle beep</li>
+ <li>CLR+PLUS: Звуковая индикация вкл./выкл.</li>
  </ul>
  <br>
  
- "Angle units / BT" cycle<br>
+ "Единицы измерения угла / BT" пеерключение<br>
  <ul>
- <li>compass off, BT off</li>
- <li>compass on (grad), BT off</li>
- <li>compass on (grad), BT on</li>
- <li>compass on (deg), BT off</li>
- <li>compass on (deg), BT on</li>
+ <li>компас выкл, BT выкл</li>
+ <li>компас вкл (грады), BT выкл</li>
+ <li>компас вкл (грады), BT вкл</li>
+ <li>компас вкл (градусы), BT выкл</li>
+ <li>компас вкл (градусы), BT вкл</li>
  </ul>
  <br><p>
  
