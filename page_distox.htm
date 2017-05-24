@@ -57,6 +57,21 @@
  <li>MEM+FUNC: включить silent mode</li>
  <li>MEM+MINUS: переключть в режим обратных замеров [2.4]</li>
  <li>SMART+MINUS: проверка троекратным измерением</li>
+ <li>DIST (with laser on): measure</li>
+ <li>CLR: power off</li>
+ <li>CLR+SMART: toggle calib. mode</li>
+ <li>CLR+MEM: clear unsent memory</li>
+ <li>CLR+FUNC: toggle bluetooth</li>
+ <li>CLR+MINUS: locked power off</li>
+ <li>REF: front reference</li>
+ <li>REF+FUNC: back reference</li>
+ <li>REF+PLUS: toggle display light</li>
+ <li>REF+MINUS: toggle beep</li>
+ <li>MEM: distance units</li>
+ <li>MEM+SMART: angle units (deg/grad)</li>
+ <li>MEM+FUNC: toggle silent mode</li>
+ <li>MEM+MINUS: toggle backsight mode [2.4]</li>
+ <li>SMART+MINUS: toggle triple-shot check [2.4]</li>
  </ul>
  <br><p>
  
@@ -65,6 +80,9 @@
  <li>FUNC+SMART: тип источника питания</li>
  <li>FUNC+CLR+MEM: сброс всех настроек</li>
  <li>DIST+PLUS+MINUS (switching on): режим загрузчика</li>
+ <li>FUNC+SMART: change battery type</li>
+ <li>FUNC+CLR+MEM: factory reset</li>
+ <li>DIST+PLUS+MINUS (switching on): bootloader mode</li>
  </ul>
  <br><p>
  
@@ -92,20 +110,21 @@
  <ol>
  <li>battery</li>
  <li>hw/fw version, serial number</li>
- <li>display light level (1:10)</li>
- <li>endpiece offset (-128:127)</li>
+ <li>display light level (1:10) [2.3]</li>
+ <li>endpiece offset (-128:127) [2.3]</li>
  </ol>
  <br><p>
  
  <h3>DistoX - A3</h3>
  
  <ul>
- <li>AREA: continuous display of azimuth+clino (back ref.) or roll+dip (front ref.)</li>
- <li>AREA (in front ref.)
+ <li>AREA (back ref.): continuous display of azimuth+clino (*)</li>
+ <li>AREA+REF (front ref.): continuous display of roll+dip (*)</li>
  <li>AREA*2: firmware version and serial number</li>
  <li>UNITS: toggle display light</li>
  <li>AREA*2+REF*2+CLR: toggle silent mode</li>
  </ul>
+ (*) Do not take measurements in this mode
  <br><p>
  
  Two seconds:<br>
