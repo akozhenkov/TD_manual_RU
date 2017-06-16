@@ -13,11 +13,12 @@
 Project the outline on the horizontal plane for the plan view, and slice a vertical profile curtain for the profile view.
 <br><p>
 
-With auto-walls you tell TopoDroid to draw walls to the right and left of a shots interpolating through the end-points of the splays. 
-You must choose an auto-wall mechanism thru the settings. At the moment there is only one, namely "convex" walls. A polyline is traced connecting the outermost end-points of the splays. 
-To create a wall there must be at least one splay end-point on the side of the shot.<br><p>
+По комманде  <b>"Авто-стены"</b> TopoDroid рисует стены справа и слева от пикетов, интерполируя через концы боковых замеров. Вам необходимо установить механизм авто построения стен в настройках.
+На данный момент доступно два алгоритма: <i>выпуклые</i> и <i>Делане</i>.<br><p>
 
-По комманде  <b>"Авто-стены"</b> TopoDroid рисует стены справа и слева от пикетов, интерполируя через концы боковых замеров. На данный момент существует только один механизм интерполяции, а именно "выпуклые" стенки, тоесть ломаная линия, соединяющая крайние концы боковых замеров. Для того, чтобы создать стену, должен быть, по крайней мере, один боковой замер в сторону от нитки хода.<br><p>
+В случае <i>выпуклого</i> алгоритма построения стен, строиться полилиния, соединяющая самые отстоящие точки боковых замеров. Для того чтобы линия могда быть построена необходимо иметь хотябы одну точку бокового замера с одной стороны от замера. В этом случае две линии стен будут автоматически построены с каждой стороны от замера.<br><p>
+
+В случае алгорима <i>Делане</i> линии стен строятся при помощи триангуляции Делане крайних точек боковых замеров (plus eigth points "at infinity"), и соответствующий ячеек Вороне. Каждая точка конца боковаго замера асоциируется с центром дальней ячейки. От ячеек до бесконечности строиться выпуклая поверхность. This is then shrinked with the splay endpoints for which the associated center lies outside the hull. A single closed wall border is traced, usually containing the shot.<br><p>
 
 Инструмент <b>"Авто-стены"</b> работает с одним вектором, и не принимает во внимание соседние замеры. Поэтому вполне вероятно, что "авто-стена" будет "резать" соседний кусок галереи или пропустит его. После этого вы должны отредактировать "авто стену", чтобы убрать эти недостатки, то есть, вставить точки для недостающих частей и удалить или переместить, точки, которые попадают в соседнюю галерею.<br><p>
 
