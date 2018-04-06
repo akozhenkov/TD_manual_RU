@@ -4,6 +4,9 @@
 
 Translation of the Topodroid man pages into Russian from English 
 
+Перевод официального руководства программы Topodroid на Руссий язык.
+Для просмотра руководства откройте файл manual00.htm в интернет браузере.
+
 TopoDroid RELEASE NOTES
 
 4.0.0c Следующий
