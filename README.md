@@ -9,6 +9,10 @@ Translation of the Topodroid man pages into Russian from English
 
 TopoDroid RELEASE NOTES
 
+4.0.1c - Beta  2018.05.26
+* Обновления руководства и переводов.
+* Новая функция показа/скрытия боковых замеров на абрисе.
+
 4.0.1a - 2018-05-17
 * Исправления: экспорт сплеев в KML, компенсация магнитной аномалии.
 
