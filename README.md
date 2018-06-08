@@ -2,7 +2,7 @@
 
 [![Join the chat at https://gitter.im/akozhenkov/TD_manual_RU](https://badges.gitter.im/akozhenkov/TD_manual_RU.svg)](https://gitter.im/akozhenkov/TD_manual_RU?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Translation of the Topodroid man pages into Russian from English 
+Translation of the Topodroid man pages into Russian.
 
 Перевод официального руководства программы Topodroid на Руссий язык.
 Для просмотра руководства откройте файл manual00.htm в интернет браузере.
