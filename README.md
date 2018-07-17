@@ -9,7 +9,11 @@ Translation of the Topodroid man pages into Russian.
 
 TopoDroid RELEASE NOTES
 
-4.0.1q - 2018-07-11
+4.0.1r - Next beta
+* Исправления: phantom area points.
+* Обновления руководства.
+
+4.0.1q - 2018-08-11
 * Минимальный API 16 (Android 4.1) собрано с android-26 (built 27).
 * Диалог базовой настройки при "чистой" установке.
 * Изменения в экспорте данных съёмки в Therion: (# extend auto).
