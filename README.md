@@ -10,6 +10,8 @@ Translation of the Topodroid man pages into Russian.
 TopoDroid RELEASE NOTES
 
 4.0.1r - Next beta
+* Экспорт данных в формат GeoJSON.
+* Extend stretch.
 * Исправления: phantom area points.
 * Обновления руководства.
 
