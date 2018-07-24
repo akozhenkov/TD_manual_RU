@@ -9,12 +9,15 @@ Translation of the Topodroid man pages into Russian.
 
 TopoDroid RELEASE NOTES
 
-4.0.1s - Next
+4.1.0 - 2018-07-24
+* Исправления:  fix for multisketch.
 * Исправления: настройка размера текста (максимальное значение)
 * Просмотр фото без использования внещних приложений (to avoid compat-support due to Android N)
+* Экспорт данных в формат GeoJSON. (экспериментальная функция)
+* Частичная развертка.
 
 4.0.1r - Beta 2018-07-19
-* Экспорт данных в формат GeoJSON.
+* Экспорт данных в формат GeoJSON. (экспериментальная функция)
 * Extend stretch.
 * Исправления: phantom area points.
 * Обновления руководства.
