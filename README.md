@@ -15,7 +15,7 @@ TopoDroid RELEASE NOTES
 Приложение собранное под Android-2.2 и выше доступно в [разделе версии 4.1](https://sites.google.com/site/speleoapps/home/topodroid/topodroid-old-download/topodroid-4-1).
 
 4.1.0/a - 2018-07-24
-* Исправления:  fix for multisketch.
+* Исправления:  ошибка в чтении большого кол-ва абрисов.
 * Исправления: настройка размера текста (максимальное значение)
 * Просмотр фото без использования внещних приложений (to avoid compat-support due to Android N)
 * Экспорт данных в формат GeoJSON. (экспериментальная функция)
