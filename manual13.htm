@@ -161,7 +161,32 @@ Settings:
 </ul>
 <br><p>
 
-
+<b>Shapefile</b> (.shp .shx .dbf)<br>
+Данные съемки могут быть экспортированы в виде шейп-файла, если есть по крайней мере один геопривязаный пикет.
+Экспортируются два шейп-файла: один для пикетов и второй для линий (отрезки и сплеи).
+Экпортированные файлы сохранияются в папку "shp".
+Каждый шейп-файл состоит из терх файлов: файл данных (shp), файл индексов (shx) и файл атрибутьв (dbf).
+Если в съёмке есть разрыв нитки хода, будет экспортирована только та часть в которой есть привязанный пикет.
+Азимуты коректируются за магнитное склонение.<br><p>
+  
+ В DBF шейп-файле "пикетов" содержиться только одно поле "номер пикета".<br><p>
+  
+ The "shots" DBF contains the fields
+<ul style="margin-top=0">
+<li><i>type</i>: either "leg" or "splay"</li>
+<li><i>from</i> station</li>
+<li><i>to</i> station ("-" for splays)</li>
+<li>shot <i>flag</i> as hex: 1-surface, 2-duplicate, 4-commented</li>
+<li>shot <i>comment</i></li>
+</ul><br>
+ 
+ Settings:
+<ul style="margin-top=0">
+<li><u>stations</u>: whether to export the stations file</li>
+<li><u>splays</u>: wheter to include the splays</li>
+</ul>
+<br><p>
+  
 <b>CSV</b> (.csv)<br>
 Данные съёмки могут быть экспортированы как список с полями разделенными запятой:
 <ul style="margin-top=0">
