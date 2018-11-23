@@ -154,10 +154,10 @@ TopoDroid поддерживает формат <i>PocketTopo</i> как на и
 В случае если часть нитки хода не связана с пикетом имеющим географические координаты, то в GeoJSON то будет выгружена только часть трека до разрыва.
 Азимуты коректируются за магнитное склонение.<br><p>
 
-Settings:
+Настройки:
 <ul style="margin-top=0">
-<li><u>stations</u></li>
-<li><u>splays</u></li>
+<li><u>stations</u>  экспорт пикетов в файл</li>
+<li><u>splays</u> экспорт сплеев в файл</li>
 </ul>
 <br><p>
 
@@ -171,19 +171,19 @@ Settings:
   
  В DBF шейп-файле "пикетов" содержиться только одно поле "номер пикета".<br><p>
   
- The "shots" DBF contains the fields
+DBF файл с "Замерами" содержит поля:
 <ul style="margin-top=0">
-<li><i>type</i>: either "leg" or "splay"</li>
-<li><i>from</i> station</li>
-<li><i>to</i> station ("-" for splays)</li>
-<li>shot <i>flag</i> as hex: 1-surface, 2-duplicate, 4-commented</li>
-<li>shot <i>comment</i></li>
+<li><i>type</i>: либо "замер" либо "сплей"</li>
+<li><i>from</i> пикет ОТ</li>
+<li><i>to</i> пикет ДО ("-" для сплеев)</li>
+<li><i>flag</i> флаг замера в 16 ричном формате: 1-поверхность, 2-дублирующий, 4-закоментированный</li>
+<li><i>comment</i> комментарий</li>
 </ul><br>
  
- Settings:
+ Настройки:
 <ul style="margin-top=0">
-<li><u>stations</u>: whether to export the stations file</li>
-<li><u>splays</u>: wheter to include the splays</li>
+<li><u>пикеты</u>: экспорт пикетов в файл</li>
+<li><u>сплеи</u>: экспорт сплеев в файл</li>
 </ul>
 <br><p>
   
