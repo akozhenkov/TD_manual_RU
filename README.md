@@ -9,7 +9,7 @@ Translation of the Topodroid man pages into Russian.
 
 TopoDroid RELEASE NOTES
 
-4.1.1t Следующий
+4.1.1u Бета 2018-11-28
 * Экспорт данных съёмки в ESRI shape.
 * Исправления: Настройки цветов при импорте PocketTopo
 * Обновления руководства и переводов.
