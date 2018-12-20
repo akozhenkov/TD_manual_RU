@@ -5,43 +5,43 @@
 
    	 <h4>Спец настройки</h4>
  
-  <i>Спец настройки</i> разных продвинутых фич TopoDroid.<br>
+ <i>Спец настройки</i> разных продвинутых фич TopoDroid.<br>
  Они доступны только на теством уровне функционала.<br>
- The flags marked with "*" are disables by default.
+ Функции отмеченные "*" по умолчанию выключены.
  <br><p>
  
   <ul>
  <li><i>Частичная развертка</i> нитки хода [*]</li>
  <li><i>Последние измерения</i> выделены синим цветом и отображаются выборочно [*]</li>
- <li><i>Vertical threshold</i> for legs [80]</li>
- <li><i>Splay dash coherence</i>: splay shots dashed coherently between plan and profile views [enabled]</li>
+ <li><i>Порог вертикальности</i> для замеров [80 градусов] от горизонта</li>
+ <li><i>Splay dash coherence</i>: сплеи отображаются пунктиром на плане и разрезе по одинаковым критериям [вкл]</li>
  <li><i>Порог угла для боковых замеров пунктиром</i>: боковые замеры с углами больше этого порогового значения будут отображаться на плане пунктиром. [50 градусов]</li>
  <li><i>Порог азимута для боковых замеров пунктиром</i>: боковые замеры с разницей в азимуте к замерам больше этого порогового значения будут отображаться на разрезе пунктиром. [60 deg.]</li>
  <li><i>Порог угла для боковых замеров пунктиром</i>: боковые замеры с углами меньше этого порогового значения, будут отображаться на поперечном сечении пунктиром  [60 deg.]</li>
- <li>Number of sketch <i>backups</i>, kept in a round list</li>
- <li><i>Minimum interval</i> between two backups [60 s]</li>
+ <li>Кол-во  <i>бекапов</i> абриса для функции отмена действия</li>
+ <li><i>Минимальный интервал</i> между бекапами [60с]</li>
  </ul>
  <br><p>
  
-  <b>Line settings</b><br>
- <ul>
- <li><i>Minimal corner angle</i> in making lines straight (fourth button of line-item edit dialog) [45] </li>
- <li><i>Interpolation accuracy</i> for cubic Bezier segments [1.0]</li>
- <li><i>Corner threshold</i> for cubic Bezier segments [20.0]</li>
- <li><i>Line/Area snap</i> actions [*]</li>
- <li><i>Smooth/straighten segment</i> actions [*]</li>
- <li><i>Multipath</i> actions [*]</li>
- </ul>
- <br><p>
+<b>Настройки линий</b><br>
+<ul>
+<li><i>Минимальный угол</i> при спрямлении линий (четвертая кнопка диалога редактирования линий) [45] </li>
+<li>Точность интерполяции кривых безье. По умолчанию - 1</li>
+li>Угол Безье. Угловой порог кубической интерполяции кривых Безье. По умолчанию 20</li>
+<li><i>Притягивание Линии/Области</i> к другим линиям, сплеям вкл/выкл функций [*]</li>
+<li><i>Сгладить/спрямить</i> сегмент вкл/выкл функций [*]</li>
+<li><i>Multipath</i> actions [*]</li>
+</ul>
+<br><p>
  
-  <b>Auto wall settings</b><br>
+ <b>Настройки Авто-Стен</b><br>
  <ul>
- <li><i>Auto-wall tyoe</i> (none, convex, Delaynay) [none]</li>
- <li><i>Maximum clino</i> for plan-view splays [70]</li>
- <li><i>Minimum clino</i> for profile-view splays [45]</li>
- <li><i>Maximum separation</i> of wall points along the shot [0.1]</li>
- <li><i>Maximum concavity</i> [0.1]</li>
- <li><i>Distance</i> between points in the wall-line [1.0]</li>
+ <li>Тип стен {none, convex, Delaynay}. По умолчанию Выпуклый</li> none, convex, Delaynay
+ <li>Угол луча в плане. Максимальный угол луча до стен в плане. По умолчанию 70 градусов</li>
+ <li>Угол луча в разрезе Максимальный угол луча до стен в разрезе. По умолчанию 45 градусов</li>
+ <li>Интервалы. Минимальный интервал между точками вдоль луча. По умолчанию - 0.1 м</li>
+ <li>Вогнутость. Максимальная вогнутость {%}. По умолчанию - 0.1 </li>
+ <li>Шаг. Интервал между точками вдоль стены. По умолчанию - 1 м</li>
  </ul>
  <br><p>
  
