@@ -10,6 +10,8 @@ Translation of the Topodroid man pages into Russian.
 TopoDroid RELEASE NOTES
 
 4.1.3 Next production release
+
+4.1.2q 2019-03-05
 * Данные калибровки не попадающие в группы подсвечены зеленым. 
 * Обновления руководства и переводов.
 
