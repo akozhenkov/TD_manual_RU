@@ -9,6 +9,26 @@ Translation of the Topodroid man pages into Russian.
 
 TopoDroid RELEASE NOTES
 
+4.1.3v Next
+* Extracted code to compute calib data coverage.
+* Added warning before uploading coeffs with coverage below 95% or average error above 0.5 degrees.
+* Обновления руководства и переводов.
+
+4.1.3u 2019-05-24
+* Переписан функционал поиска: 
+* added search for legs with unset extend.
+* Подсветка результатов поиска желтым цветом.
+* Обновления руководства.
+
+4.1.3t 2019-05-19
+* Исправления: 3d DXF export and other minor problems.
+* Исправления портретная ориентация окна настроек.
+* Слои абриса.
+
+4.1.3p/q Beta 2019-05-16
+* Исправления: проверка разрешений, просмотр фото.
+* Обновления руководства и переводов.
+
 4.1.3n/o Beta 2019-05-13
 * Слои для абрисов
 * Цветовой фон сообщений: голубой=информация, желтый=уведомление, оранжевый=предупреждение
