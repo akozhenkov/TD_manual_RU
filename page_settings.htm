@@ -193,33 +193,33 @@
 <li>Порог угла горизонтального сечения. Порог угла для горизонтальных поперечных сечений [0,90]. По умолчанию 70 градусов</li>
 <li>Проверка нитки хода. Проверять на неприсоединенные пикеты. По умолчанию - нет</li>
 <li>Leg "extend" check</li>
-<li>Кол-во сохраненных копий. По умолчанию - 5</li>
-<li>Интервал сохранения. По умолчанию - 60</li>
+<!--li>Кол-во сохраненных копий. По умолчанию - 5</li>
+<li>Интервал сохранения. По умолчанию - 60</li -->
 
 <li>Спец настройки:<br>
   <ul>
   <li>Сдвиг/масштабирование абриса</li>
   <li>Разделить/склеить абрис</li>
-  <li>Splay plan-view threashold [default 80]</li>
+  <li>Порог угла для показа сплеев на плане [default 80]</li>
   <li>Настройки сплеев пунктиром</li>
-  <li>Splay dash clino threshold  [50 deg.]</li>
-  <li>Splay dash azimuth threshold [60 deg.]</li>
-  <li>Splay dash angle threshold [60 deg.]</li>
-  <li>Backup number. Default 5</li>
-  <li>Backup interval. Default 60</li>
-  <li>Auto x-sections in exports</li>
-  <li>Saved station coloring</li>  
-  <li>Backup clear menu</li>
-  <li>Auto-walls: type, and others</li>
-  <li>Layers</li>
-  <li>Auto-walls:<br>
+  <li>Порог угла сплеев пунктиром  [50 deg.]</li>
+  <li>Порог азимута сплеев пунктиром [60 deg.]</li>
+  <li>Порог угла сплеев пунктиром на сечении [60 deg.]</li>
+  <li>Кол-во резервных копий. По умолчанию 5</li>
+  <li>>Интервал сохранения. По умолчанию 60</li>
+  <li>Авто сечения при экспорте</li>
+  <li>Цвет сохраненных пикетов</li>  
+  <li>Меню очистки резервных копий</li>
+  <li>Авто-стены: тип и др.</li>
+  <li>Слои абриса</li>
+  <li>Авто-стены:<br>
     <ul>
-    <li>Wall type</li>
-    <li>Plan splay clino</li>
-    <li>Profile splay clino</li>
-    <li>Minimum separation along the shot</li>
-    <li>Concavity</li>
-    <li>Point separation on the wall</li>
+    <li>Тип стен</li>
+    <li>Угол сплея в плане</li>
+    <li>Наклон сплеев на разрезе</li>
+    <li>Минимальный интервал между точками вдоль луча</li>
+    <li>Вогнутость</li>
+    <li>Шаг между точками на линии стены</li>
    </ul>
 </li>
 </ul>
@@ -241,18 +241,19 @@
 <li>Прозрачность границ области. По умолчанию - нет</li>
 <!-- li>Точность кривых безье. По умолчанию - 1</li -->
 <!-- li>Угол Безье. Угловой порог кривых Безье. По умолчанию 20</li -->
-<li>Geek:<br>
+
+  <li>>Спец настройки:<br>
   <ul>
-  <li>Straightening angle</li>
-  <li>Interpolation accuracy (Bezier)</li>
-  <li>Cornet threshold (Bezier)</li>
-   <li>Max point/segment distance for simplification [m]. Default 0.5</li>
-  <li>Max segment length for simplification [m]. Default 2.0</li>
+  <li>Угол спрямления линии</li>
+  <li>Точность кривых  (Bezier)</li>
+  <li>Порог угла (Bezier)</li>
+   <li>Буфер сегмента прореживания [m]. Default 0.5</li>
+  <li>Макс длина сегмента прореживания [m]. Default 2.0</li>
   <li>Point weeding segment buffer</li>
-  <li>Line/area snap</li>
-  <li>Smooth/straighten segments</li>
-  <li>Streighten lines</li>
-  <li>Path multiselection</li>
+  <li>Привязать линию/область</li>
+  <li>Сгладить/спрямить сегменты</li>
+  <li>Спрямлять линии</li>
+  <li>Выбор нескольких линий</li>
   </ul>
 </li>
 
@@ -296,13 +297,14 @@
 <!-- li>Пауза скачивания [мс]. Время ожидания после скачивания данных. По умолчанию 500</li -->
 <!-- li>Пауза вкл. лазера [мс]. Пауза после включения лазера. По умолчанию 1000</li -->
 <!-- li>Пауза после замера [мс]. Время ожидания после выполнения измерения. По умолчанию 4000</li -->
-<li>Geek:<br>
+
+  <li>Спец настройки:<br>
   <ul>
-  <li>Connection delay</li>
-  <li>Data pause</li>
-  <li>Data ready wait delay</li>
-  <li>Laser pause</li>
-  <li>Shot pause</li>
+  <li>Задержка подключения. По умолчанию 0</li>
+  <li>Пауза скачивания [мс]. Время ожидания после скачивания данных. По умолчанию 500</li>
+  <li>Пауза Готовности данных [мс]. Время ожидания до следующей попытки скачиывния. По умолчанию 500</li>
+  <li>Пауза вкл. лазера [мс]. Пауза после включения лазера. По умолчанию 1000</li>
+  <li>Пауза после замера [мс]. Время ожидания после выполнения измерения. По умолчанию 4000</li>
   </ul>
 </li>
 
