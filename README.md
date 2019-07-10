@@ -9,7 +9,10 @@ Translation of the Topodroid man pages into Russian.
 
 TopoDroid RELEASE NOTES
 
-4.1.3y Next
+4.1.4 Next
+* Отключен перевод на украинский язык.
+
+4.1.3y Beta 2019-07-05
 * Небольшие исправления.
 * Обновления переводов.
 
