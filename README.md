@@ -9,8 +9,10 @@ Translation of the Topodroid man pages into Russian.
 
 TopoDroid RELEASE NOTES
 
-4.1.4C Next
+4.1.4D Next
 * Ревизия условных обозначаний.
+* Исправлен экспорт точек в SVG для Inkscape.
+* Обновления руководства и переводов.
 
 4.1.4B Beta 2019-10-16
 * Новые условные обозначения "антропогенез" и друние (by R. Severo).
