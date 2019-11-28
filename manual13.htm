@@ -246,6 +246,16 @@ DBF файл с "Замерами" содержит поля:
 <li><u>EOL</u>: конец строки (lf или cr+lf)</li>
 </ul><br><p>
 
+ <b>Tunnel</b> (.xml)<br>
+Абрис может быть экспортирован в формат Tunnel XML. Файлы сохраняются в поддиректорию "tnl".<br>
+Следующие типы линий транслируются в формат Tunnel lines: wall, presumed, pit, chimney, and slope. 
+Все остальные типы линий трансформируются в тип Tunnel "details".<br>
+Линии границ областей трансформируются в тип "filled".<br>
+Следующие типы точек транслируются в формат Tunnel points: air-draught, archeo, blocks, clay, column, curtain, flowstone, gradient,
+guano, mud, pebbl es, popcorn, sand, soda-straw, stalactite, stalagmite, water, water-flow.
+Все остальные типы точек трансформируются в тип Tunnel  "bedrock".<br>
+<p> 
+  
 <b>DXF</b> (.dxf)<br>
 Данные съёмки могут быть экспортированы как 3D DXF (<i>LibreCAD</i>) разделенный на слои
 <ul style="margin-top=0">
