@@ -9,8 +9,10 @@ Translation of the Topodroid man pages into Russian.
 
 TopoDroid RELEASE NOTES
 
-5.0.2b Next
+5.0.2g 2020-04-20
 * Новая настройка: Создать конфигурационный файл Therion.
+* Отслеживание версий перевода руководства пользователя.
+* Исправления csurvey xml, падение при прокрутке списка.
 
 5.0.2a 2020-04-08
 * Менеджер проектов пещер встроен в TopoDroid
