@@ -7,7 +7,7 @@ Translation of the Topodroid man pages into Russian.
 Перевод официального руководства программы Topodroid на Руссий язык.
 Для просмотра руководства откройте файл manual00.htm в интернет браузере.
 Текущая версия руководства отражена в файле manifest. 
-Topodroid сверяет эту информацию с "текущей" версией руководства в topodroid/res/values/user_man.xml и обновляет при необзодимости.
+Topodroid сверяет эту информацию с "текущей" версией руководства в topodroid/res/values/user_man.xml и обновляет при необходимости.
 
 TopoDroid RELEASE NOTES
 
