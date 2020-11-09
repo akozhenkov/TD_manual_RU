@@ -18,15 +18,19 @@
 <li>"name NAME", где NAME название области по умолчанию [обязательный]</li>
 <li>переводы названия, т.е. "name-es ..." [не обязалельный]</li>
 <li>"th_name NAME", где NAME это название в Therion, и должно совпадать с именем файла [обязательный]</li>
-<li>"color rgb alpha" rgb и alpha - цвет в шестнадцатиричном формате [обязательный]</li>
+<li>"color rgb alpha" rgb и alpha - цвет в шестнадцатиричном формате например '0x0000ff' голубой, и '0x99' полупрозрачный [обязательный]</li>
 <li>"close-horizontal" замыкать горизонтально [не обязательный]</li>
 <li>"orientable" ориентируемый [не обязательный]</li>
 <li>"level" view_flag [не обязательный, 1 if missing]</li>
 <li>"bitmap WIDTH HEIGHT X_TILE Y_TILE" - начало растрового рисунка. Режимы заливки могут быть: M (зеркальный) или R (повторение). За этой строчкой должны следовать: HEIGHT (высота) линий, WIDTH (ширина) и пиксели рисунка (1: рисунок, 0: фон).</li>
 <li>"endbitmap" отмечает конец растра</li>
-<li>"roundtrip VALUE" [не обязательный SVG-roundtrip, VALUE может быть 1 (walls_shp), 2 (walls_sym), 3 (detail_shp), 4 (detail_sym) - по умолчанию 3]</li>
+<li>"roundtrip VALUE" [не обязательный для SVG-roundtrip, VALUE может быть 1 (walls_shp), 2 (walls_sym), 3 (detail_shp), 4 (detail_sym) - по умолчанию 3]</li>
 <li>"endsymbol"</li>
 </ul>
+
+<b>Название</b><br>
+Правила для названий символов описаны в <a href="page_symbol_point.htm">Point Tool</a>.
+<br><p> 
 
 <b>Замыкать горизонтально</b><br>
 Если этот атрибут установлен, то полигон замыкается горизонтально на разрезах
