@@ -11,6 +11,14 @@ Topodroid сверяет эту информацию с "текущей" вер�
 
 TopoDroid RELEASE NOTES
 
+5.1.0 Next
+BRIC4 and SAP5 support.
+Fixes:
+magnetic declination computation,
+sketch shapefile export
+sketch dxf point icon arc lines (replaced with segments)
+Translations and user manual updates
+
 5.0.71 Beta 2020-12-24
 * SAP5 предварительная поддержка (только для тестов).
 * Исправления: редактирование калибровочных замеров, single-loop компенсация.
