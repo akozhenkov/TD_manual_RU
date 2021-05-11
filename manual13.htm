@@ -428,7 +428,7 @@ guano, mud, pebbl es, popcorn, sand, soda-straw, stalactite, stalagmite, water, 
 
 Боковые замеры в экспортированных SVG и DXF файлах могут отличатся от того что было на абрисах TopoDroid поскольку экспорт в DXF использует только нпаправление развертки замера между пикетами,  в то время как на абрисах TopoDroid использует азимут замеров для вычисления направления развертки боковых замеров.<br><p>
 
-Абрисы могут быть экспортированы в DXF <i>9</i> ACAD1009, <i>12</i> (R13) ACAD1012 и <i>14</i> (R14) ACAD1014.
+Абрисы могут быть экспортированы в DXF <i>9</i> AC1009, <i>12</i> (R13) AC1012 и <i>14</i> (R14) AC1014.
 Для DXF-9 области экспортируются в виде границ и не имеют заливки.
 <br><p>
   
@@ -463,6 +463,51 @@ guano, mud, pebbl es, popcorn, sand, soda-straw, stalactite, stalagmite, water, 
 Создается папка, содержащая все файлы.
 Все файлы сжимаются в zip архив и помещаются в папку "shp" с расширнием ".shz".
 <br><p>
+  
+Если вы установили географическую привязку хотя бы одного пикета и установили соответствующий флажок в диалоговом окне экспорта,
+данные экспортируются в системе отсчета WGS84 и корректируются с учетом магнитного склонения.<br>
+В противном случае данные экспортируются в локальной системе координат, и поправка на магнитное склонение не применяется.<br><p>
+
+Файл точек "point" DBF содержит поля
+<ul style="margin-top=0">
+<li>point <i>name</i></li>
+<li><i>orientation</i></li>
+<li><i>level</i></li>
+<li><i>scrap</i></li>
+<li>optional <i>text</i> (обрезается до 128 символов)</li>
+</ul><br>
+
+Файл "extra" DBF содержит поля
+<ul style="margin-top=0">
+<li>point <i>name</i></li>
+<li><i>orientation</i></li>
+<li><i>level</i></li>
+<li><i>scrap</i></li>
+<li>optional <i>text</i> (обрезается до 128 символов)</li>
+<li><i>file</i></li>
+</ul><br>
+
+Файл "line" и "area" DBF содержит поля
+<ul style="margin-top=0">
+<li><i>type</i> это разделяет типы область и линия</li>
+<li>line or area <i>name</i></li>
+<li><i>level</i></li>
+<li><i>scrap</i></li>
+</ul><br>
+
+Файл "station" DBF содержит поля
+<ul style="margin-top=0">
+<li><i>name</i> of the station</li>
+</ul><br>
+
+Файл "shot" DBF содержит поля
+<ul style="margin-top=0">
+<li><i>type</i>: either "leg" or "splay"</li>
+<li><i>from</i> station</li>
+<li><i>to</i> station ("-" for splays)</li>
+<li>shot <i>flag</i> as hex: 1-surface, 2-duplicate, 4-commented</li>
+</ul><br> 
+ 
 
 <b id="svg">SVG</b> (.svg)<br>
 Абрисы могут быть экспортированы как SVG файлы.<br><p>
