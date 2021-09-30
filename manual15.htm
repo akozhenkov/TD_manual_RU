@@ -3,7 +3,11 @@
 <html><body>
 <h3>[15] 3D </h3>
 
-<b>Cave3D</b> программа для 3D просмотра проектов Therion, файлов Loch, файлов или проектов Compass и файлов VisualTopo.<br>
+  
+TopoDroid 3D вьюер предназначен для трехмерной визуализации модели пещеры и не требует подключения к интернету.<br>
+Он поддерживает следующие форматы: Therion (th, thconfig), Loch, Compass (dat, mak), и VisualTopo.<br><p>
+  
+<!-- b>Cave3D</b> программа для 3D просмотра проектов Therion, файлов Loch, файлов или проектов Compass и файлов VisualTopo.<br>
 TopoDroid использует его для отображения 3D-модели съёмки.
   
 До <u>Android-10</u>, TopoDroid отображает 3D модель съемки в  Cave3D.
@@ -13,10 +17,9 @@ TopoDroid использует его для отображения 3D-моде�
 Для просмотра съемки в 3D вам необходимо экспортировать данные съемки во внешний формат (те, Therion),
 и открыть экспортированные файлы в Cave3D, при помощи файл менеджера Android "media store" (те файл браузера).
 Имейте ввиду что некоторые файл менеджеры отображают только определенные категории файлов и не будут отображать экспортированные файлы.
-<br><p>
+<br><p-->
 
- 3D модель может быть открыта либо через меню в <i>Окне Данных</i> либо нажав на кнопку
-в окне <i>Информации о съемке</i>.<br>
+ 3D модель может быть открыта либо через меню в <i>Окне Данных</i> либо нажав на кнопку в окне <i>Информации о съемке</i>.<br>
 3D модель проекта пещеры может быть открыта по нажатию кнопки в <i>Окне проекта</i>.
 <br><p>  
   
@@ -28,65 +31,197 @@ TopoDroid использует его для отображения 3D-моде�
 
 <h4>КНОПКИ</h4>
 <ul style="margin-top:0">
-<li><i>Наклон - Перемещение</i>: зеленая стрелка переключает вид между режимами вращения и перемещения.</li>
+<li><i>Move - Light</i>: Переместить модель или источник света. Касание двумя пальцами всегда перемещает и скалирует модель.</li>
+<li><i>Проекции</i>: отобразить вид в плане, построенный из трехмерной реконструкции стены, спроецированной на плоскость сетки и/или профиль.</li>
 <li><i>Пикеты</i>: кнопка отображает и скрывает номера пикетов.</li>
 <li><i>Сплеи</i>: кнопка будет отображать и скрывать сплеи. Сплеи отображаются в виде линий или конечных точек.</li>
 <li><i>Стены</i>: кнопка будет отображать или скрывать модели стен, если таковые имеются.</li>
-<li><i>Проекции</i>: отобразить вид в плане, построенный из трехмерной реконструкции стены, спроецированной на плоскость сетки и/или профиль.</li>
 <li><i>Поверхность</i>: кнопка отобразит поверхность.  Работает, только если данные о поверхности в ASCII указаны в .th файле.</li>
-<li><i>Цвет</i>: кнопка изменит цветовое кодирование нитки хода от серого к съемкам и глубине.</li>
+<li><i>Цвет</i>: кнопка изменит цветовое кодирование нитки хода: белый, по съемкам, по глубине.</li>
 <li><i>Сетка</i>: кнопка переключает подложку между сеткой и осями X, Y, Z.</li>
-</ul><br><p>
+</ul><br>
+Иконки кнопок меняются в зависимости от режима работы программы.
+<br><p>
+
+У некоторых кнопок есть функции доступные по долгому касанию:
+<ul>
+<li><i>Проекции</i>: Изменить точку фокусировки перспективы.</li>
+<li><i>Пикеты</i>: Вкл/Выкл режим выбора пикета.</li>
+<li><i>Сплеи</i>: Ручной ввод измерений.</li>
+<li><i>Цвет</i>: Выбрать съемки для отображения.</li>
+<li><i>Сетка</i>: Отображать замеры на поверхности, дубликаты, или закомментированные.</li>
+</ul>
+<br><p>
+ 
+<!-- li><i>Наклон - Перемещение</i>: зеленая стрелка переключает вид между режимами вращения и перемещения.</li>
+</ul><br><p -->
 
 <h4>МЕНЮ</h4>
 <ul style="margin-top:0">
-<li><i>Открыть файл</i>: открывает диалог выбора .th файла из подпапки в рабочем каталоге TopoDroid.</li>
+<li><i>Открыть файл</i>: открывает диалог выбора файла съемки в рабочем каталоге TopoDroid.</li>
 <li><i>Экспорт</i>: открывает диалог экспорта. Модель может быть экспортирована в форматы Therion, KML, STL или STL-bin, CGAL и LAS.
 Существуют варианты включения в экспорт сплеев, стен, пикетов и поверхности. Модель также может быть сериализована в текстовом файле.</li>
 <li><i>Инфо</i>: отобразит статистику съёмки.</li>
 <li><i>Диаграмма ICO</i>: отображает диаграмму направлений в трехмерном пространстве.</li>
 <li><i>Диаграмма роза</i>: отображает диаграмму распределения азимутов на двумерной плоскости.</li>
-<li><i>Точка обзора</i>: позволит вам выбрать точку обзора.</li>
-<li><i>DEM</i> Цифровая Модель Рельефа: прозрачность, наложение, загрузка файла.</li>
+<li><i>Точка обзора</i>: позволит вам выбрать точку обзора. Например "ЮГ" означает направление взгляда на пещеру с юга.</li>
+<li><i>Поверхность</i> Цифровая Модель Рельефа: прозрачность, наложение нитки хода на поверхность, загрузка файла.</li>
 <li><i>Сброс</i>: центрирует 3D-модель на виде сверху и увеличевает изображение, чтобы оно поместилось на экране.</li>
-<li><i>Модель стен</i>: создать или очистить 3D реконструкции стен.</li>
+<li><i>Модель стен</i>: создать или очистить 3D реконструкции стен. Переключает проекцию стен на план или разрез</li>
 <li><i>Опции</i></li>
 <li><i>Помощь</i></li>
 </ul><br><p>
 
 <h4>ОПЦИИ</h4>
 <ul style="margin-top:0">
-  <li><i>Корневая папка</i>: Каталог, содержащий файлы Therion / Loch</li>
+  <li><i>Корневая папка</i>: Каталог, содержащий файлы съемок</li>
   <li><i>Размер текста</i>: Размер текста подписи пикетов</li>
   <li><i>Размер кнопок</i>: Размер кнопок</li>
-  <li><i>Радиус выбора</i>: Радиус выбора</li>
+  <li><i>Радиус выбора</i>: Радиус выбора точек пикетов [1.0]</li>
+  <li><i>Диалог пикета</i>: открыть ли диалог редактирования данных для текущего пикета [n].</li>
+  <li><i>Точкт пикета</i>: включить постоянное отображение точек пикетов (зеленым) [n].</li>
   <li><i>Сетка сверху</i>: Показать сетку над пещерой</li>
-  <li><i>Границы DEM</i> вогруг съёмки</li>
+  <li><i>Размер сетки</i>: на сколько далеко сетка будет выходить за границы съёмки [10 клеток].</li>
+  <li><i>Просмотр снизу вверх</i>: разрешить установку точки обзора ниже горизонта [n].</li>
+  <li><i>Границы DEM</i> границы отображения DEM вогруг съёмки</li>
+  <li><i>Максимальный размер DEM</i>: максимальный размер поверхности DEM в каждом направлении [400 cells].</li>
+  <li><i>Уменьшить DEM</i>: как уменьшить размер DEM если она слишком большая (проредить или обрезать) [проредить].</li>
   <li><i>Проекции</i>: Использовать ли предварительно вычисленые проекции</li>
   <li><i>Все сплеи</i>: Использовать ли все сплеи для стен</li>
   <li><i>Разделить треугольники</i>: Разбивать ли пересекающиеся треугольники стен</li>
   <li><i>Увеличить случайность</i>: Добавить небольшой случайный вектор к сплеям</li>
   <li><i>Натяжные стены</i>: Сдвиньте точки стен на небольшое расстояние вдоль замеров</li>
+  <li><i>Powercrust</i>: Параметр "delta" в алгоритме расчета</li>
+  <li><i>Bluetooth устройство</i>: название Bluetooth устройства.</li>
 </ul><br><p>
+  
+<b>TITLE LINE</b><br>
+The title bar shows the viewing parameters:
+<ul>
+<li><i>C</i> and <i>A</i> and clino and azimuth of the viewpoint.</li>
+<li><i>S</i> is the zoom factor.</li>
+<li><i>T</i> are the X-Y translations of the model.</li>
+<li><i>L</i> are the clino and azimuth of the light.</li>
+</ul>
+<br><p>
+  
+<b>EXPORTS</b><br>
+Model can be exported into DXF, KML, STL or STL-binary, CGAL, LAS-binary, and shapefile.
+There are options to include splays, walls, stations and surface in export.<br>
+The model can be also serialized in a text file.
+<br><p>
+  
+<b>GRID/FRAME</b><br>
+The grid/frame lines are green (west-east), blue (south-north), and red (vertical).<br>
+In perspective the grid looks greenish to the north/south because the green lines stack together closer.
+And it looks blueish to the west/east.
+To help distinguish the for cardinal directions, the grid gets slightly reddish at the west-south corner.<br>
+By default the grid is below the survey, but it can be set above it (optionally).
+<br><p>
+  
+<b>SURVEY</b><br>
+The survey splays can be hidden, displayed as lines or endpoints.<br>
+The survey legs can be uncolored or colored by survey, by depth (red-to-blue) or by
+the depth beneath the surface (blue-to-red).<br>
+  
+When uncolored the survey legs are white, the surface legs green, the duplicate legs orange, 
+and the commented legs light blue.<br>
+
+The "surface", "duplictae", and "commented" legs can be turned on/off with the "legs" dialog which
+is opened by a long-tap on the fourth button.
+<br><p>
 
 <b>Модель стен</b><br>
 Поверхности стен не вычисляется автоматически при открытии файла, вычисление производится по
 запрсу пользователя через меню <i>Модели стен </i>.
 Существует две модели: pseudo conevx-hull и powercrust. Первая работает хорошо, когда сплеи расположены не плотно. Вторая - для плотно расположенных сплеев.<br>
-После того, как стены были вычислены, их можно отобразить с помощью кнопки «стены».<br><p>
-
-<b>Действия с пикетами</b><br>
-Когда пикеты отображаются, их можно выбрать, нажав на пикет.
-Выбранный пикет может быть установлен как точка вращения модели («центр») или расстояние от
-другого пикета может быть измерено.<br>
+После того, как стены были вычислены, их можно отобразить с помощью кнопки «стены».
   
-Если в модель загружена DEM то будет отображаться глубина под поверхностью.<br><p>
+The wall model depends on the number and the quality of the splays.
+Poor splays will result in a poor model.<br>
 
+The computation is done in background.
+When done the wall can be displayed with the "wall" button.<br><p>
+
+The powercrust model includes also the projection of the walls on the horizontal plane (plan view), and on a vertical curtain
+along the survey (profile view). Their display is enabled through the "walls" menu.
+<br><p>
+  
 <b>DEM (Цифровая Модель Рельефа)</b><br>
 Cave3D может работать с DEM присутсвующей в файлах Therion или loch.<br>
 В случае если в съёмка в TopoDroid есть пикет привязанный к координатам, можно быть добавить в модель DEM,  загрузив её 
 из файла (поддерживаемые форматы: ascii и therion гриды). Корродинаты пикета должны быть пересчитаны  
 в систему координат DEM грида через приложение Proj4.<br><p>
+  
+<b>SURFACE</b><br>
+If the (Therion or Loch) model contains surface data (Digital Elevation Model), the surface can be dislayed either gray or
+with the texture (if available).<br>
+The surface dialog has a button to load a DEM from a file. The supported formats are ascii (.asc or .ascii) and Therion grid (.grid). 
+Only the relevant portion of the DEM file is loaded.<br>
+The survey and the DEM data file must be in the same Cartographic Coordinate Reference System.
+If the survey fixed point coordinates have been transformed into another reference system,
+the transformed coordinates are used to reference the model.
+if it has only long-lat (WGS84) coordinates, the WGS-84 system is used.<br><p>
+
+The transparency of the surface is adjustable. If fully opaque the portions of surface behind others are hidden.<br>
+The projection of the survey centerline on the surface can be displayed (blue).<br>
+When the model has a surface, it can be colored by the depth beneath the surface.
+<br><p>
+
+If the model has a surface DEM, the surface texture can be loaded from a file.
+The supported file formats are GeoTiff and OSM.<br>
+The GeoTiff file must be in the same Cartographic Coordinate Reference System of the survey.
+[Tech note: if the file is 24-bit non-compressed or uses a colormap Cave3D tries to read only the portion
+covering the DEM area, otherwise the whole image
+is read in and portion area is extracted.]<br>
+The OSM texture (WGS84) can be loaded only for surveys and cave projects opened from TopoDroid.
+The texture displays the OSM lines.
+<br><p>
+
+It is possible to visualize a point (yellow dot) on the surface by entering the East/North coordinates in the CRS of the model.<br>
+
+Models loaded from TopoDroid can get also GPS points.
+If the app has permission to use the "Location" service, and this service is enabled, it is possible to
+get surface point with the Android GPS.<br>
+given permissions to use it.<br>
+The app displays the last 10 points.
+<br><p>
+
+<b>STATION ACTIONS</b><br>
+By default, when the stations are displayed, they can be selected tapping on the station point or name.<br>
+Station selection can be turned on/off with a long tap on the "station" button. When the stations are selectable
+the button has a red dot.<br><p>
+
+The selected station is highlighted red, and its coordinates are shown in a blue bar at the bottom.
+If the model has a DEM, the depth of the station below the surface is included.<br>
+To unselect the station tap on the station again or on the bar.<br><p>
+
+To measure distances between the selected station and another station, check the "measure" button in the bottom bar,
+and tap on the other station.
+The 3D distance between the two stations, its East, North, and vertical components, and the plane 2D distance are
+displayed in a dialog.
+If the two stations are connected along the centerline the "cave" distance is also shown
+and the cave-path between them is highlighted green.<br>
+Optioally, the values can be displayed in a brief message box instead of a dialog.  <br><p>
+
+When the "station" button in the bottom bar is checked, the station position on the screen 
+if fixed under rotations and the
+selected station is highlighted orange.
+<br><p>
+  
+ <b>SKETCH LIFTING</b><br>
+With surveys and cave-projects opened from TopoDroid it is possible to "lift" 2D sketches to the 3D model.
+The sketch must be exported (in TopoDroid) in "Cave3D" format. The exported file is in the "c3d" folder
+of TopoDroid. Next a sketch file can be loaded from Cave3D, and the sketch is lifted to adapt to the
+3D model.<br>
+
+The sketch dialog displays the list of opened sketches.<br>
+Each item has two checkboxes: the first to swithch on/off
+the display of the sketch, the second to remove the sketch. The choices must be confirmed with the "OK" button.<br>
+There is a button to load a new sketch.<br>
+Finally there is a button to rebind the point icons, if they go black.
+<br><p> 
+  
 
 <a href="manual14.htm">&lt; Проект пещер</a> |
 <a href="manual16.htm">Индекс &gt;</a> 
