@@ -2,26 +2,32 @@
 <meta charset="utf-8"/>
 <html><body>
 
-<h4>3d measure dialog</h4>
+<h4>Измерения в 3D</h4>
 
-When the fixed station is selected, its coordinates appear in a blue bar 
-at the bottom of the screen.<br>
-This bar has two button:
+Когда выбран пикет с координатами, его координаты отображаются на синей полосе внизу экрана.<br>
+На это полосе есть две кнопки:
 <ul>
-<li>the first sets the station as center of rotations</li>
-<li>the second switches the program in "mesuring mode": tapping on another
-station brins up the "measure dialog"</li>
+<li>первая устанавливает пикет как центр вращения</li>
+<li>вторая кнопка переключает программу в "режим измерения": нажатие на другой
+пикет вызывает "диалог измерения"</li>
 </ul><br><p>
 
-The measure dialog show the distance between the fixed station and another one.<br>
+В диалоговом окне измерения отображается расстояние между фиксированым пикетом и другим пикетом.<br>
 <ul>
-<li>the full names of the two stations</li>
-<li>the East, Nort, and vertical displacement between the two stations</li>
-<li>the 3D distance</li>
-<li>the distance in the horizontal plane</li>
-<li>the azimuth and inclination of the straight line between the two stations</li>
-<li>the length of the shortest path in the cave between the two stations (if it exists)</li>
+<li>полные названия двух пикетов</li>
+<li>восточное, северное и вертикальное расстояния между двумя пикетами</li>
+  
+<li>расстояние 3D</li>
+<li>расстояние в горизонтальной плоскости</li>
+<li>азимут и наклон вдоль прямой линии между двумя пикетами</li>
+<li>длина кратчайшего пути в пещере между двумя пикетами, если тковой путь существует, а также положительные и отрицательные денивиляции</li>
 </ul><br><p> 
+
+<b>Денивиляция</b><br>
+Положительное и отрицательное отрицательное отклонение вычисляется путем суммирования вертикальных компонентов восходящих и нисходящих замеров соответственно.
+Только замеры с наклоном болееr 10&deg; берутся в расчет.
+Для замеров с наклоном более 30&deg; полностью учитывается вертикальная составляющая замера.
+Для замеров с наклоном между 10 и 30&deg; вертикальная составляющая линейно интерполируется умножается на (наклон-10)/20.<br><p>
 
 
 </body></html>
