@@ -2,15 +2,39 @@
 <meta charset="utf-8"/>
 <html><body>
   
- <h4>Fractal Analysis</h4>
+ <h4>3D VIEWER - Fractal Analysis</h4>
 
-The fractal analysis consider the 3D space divided in cubes and counts the number of cubes
-that cover the cave (midline and splays).
-For a 3-dimensional object, when the cube side halves, ie is divided by 2,
-the number of cubes that cover the cave increase by 8 = 2<sup>3</sup>.
-The fractal exponent at a given side is the power of 2 (ie, 3 in the example).<br><p>
+Фрактальный анализ рассматривает трехмерное пространство, разделенное на кубики, и подсчитывает количество кубиков,
+которые покрывают пещеру (нитку хода и сплеи).
+Для трехмерного объекта, когда стороны куба уполовинены, т.е. поделены на 2,
+количество кубиков, покрывающих пещеру, увеличивается на 8 = 2<sup>3</sup>.
+Фрактальная экспонента на заданной стороне равна степени двойки. (т.е., 3 в данном примере).<br><p>
 
-The fractal analysis finds this exponent for varying length of the cube side,
-and display the result as a graph.<br><p>
+Фрактальный анализ находит этот показатель для переменной длины стороны куба,
+aи отобразить результат в виде графика.<br><p>
 
+Диалог <i>Фрактальный анализа</i> открывается из меню <i>Фрактал</i> окна <i>3D viewer</i>.<br>
+Он отображает результат последнего вычисления фрактала или запускает новое вычисление фрактала.<br><p>
+
+The result is a graph plotting the variation of the computed dimension as the size of the unit
+cubic cell varies.<br><p>
+
+Расчет зависит от
+<ul>
+<li><i>режима</i> вычисления</li>
+<li>следует ли учитывать также <i>сплеи</i> или только нитку хода</li>
+<li>начальный <i>размер ячейки</i><li>
+</ul><br> 
+
+<b>Расчет</b><br>
+
+Существуют три режима расчета:
+<ul>
+<li>подсчет количества заполненных ячеек</li>
+<li>подсчет количества заполненных пар ячеек вдоль направлений X, Y или Z  (6 пар)</li>
+<li>подсчет количества заполненных пар ячеек вдоль направлений X, Y или Z, а также диагональных направлений (26 пар)</li>
+</ul><br>
+
+Размер ячейки (куба) увеличивается на корень из 2х на каждом шаге.<br><p>
+  
 </body></html>
