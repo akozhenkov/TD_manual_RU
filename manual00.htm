@@ -38,7 +38,7 @@ TopoDroid не требует ввода никаких персональных
 <br><p>
 
 <h4>Рабочий каталог TopoDroid</h4>
-Основной каталог программы TopoDroid находится в системной папке "Android/data/com.topodroid.DistoX/files",
+Основной каталог программы TopoDroid находится в системной папке "Android/data/com.topodroid.ЕDX/files",
 в которой находятся подкаталоги для инструментов рисовния, "point", "line" и "area", а также 
 файл базы данных устройств "device10.sqlite", содержащий данные калибровки,
 экспортипрванные данные калибровки (каталог "ccsv"), прошивки DistoX2 (каталог "bin"),
@@ -63,6 +63,28 @@ TopoDroid не требует ввода никаких персональных
 <h4>Данные съёмки</h4>
 Данные съёмок и абрисы сохраняются в поддиректорию "TopoDroid" в рабочем каталоге TDX.
 Для каждой съемки создается подкаталог в рабочей папке "TopoDroid".<br>
+Папка "TopoDroid" содержит файлы базы данных "distox14.sqlite", а также каталоги отдельных съемок,
+ а также папку проектов пещер "thconfig"<br><p-
+
+<h4>Granting access permissions</h4>
+On Android-11 and later, TopoDroid may fail to create the base folder "TDX", or some subfolders or files in it,
+because it does not have enough permission to access the external storage.<br>
+In this case you cen grant permissions using "adb" (Android Debug Bridge).<br>
+<ol>
+<li>download "adb" on your PC</li>
+<li>on Android, enable "Developer options" (go to settings "About Phone", tap seven times the "Build number")</li>
+<li>enable "USB debugging" in the "Developer options"</li>
+<li>on the PC start the adb server. Enter the command "adb start-server"</li>
+<li>connect Android to the PC with a USB cable. You might have to allow adb-connection from the PC, on your Android</li>
+<li>on the PC enter the three commands:
+<ul>
+<li>adb shell appops set com.topodroid.TDX READ_EXTERNAL_STORAGE allow</li>
+<li>adb shell appops set com.topodroid.TDX WRITE_EXTERNAL_STORAGE allow</li>
+<li>adb shell appops set com.topodroid.TDX MANAGE_EXTERNAL_STORAGE allow</li>
+</ul>
+</li>
+</ol>
+<br><p>
  
 <!-- Эта директория находится в "основной внешней памяти" (/sdcard) для ОС Android до v. 9, и в папке "Documents" начиная 
 с Android v. 10.<br -->
@@ -70,17 +92,17 @@ TopoDroid не требует ввода никаких персональных
 Данные съёмок и абрисов не удаляются в случае если программа была деинсталирована.<br><p>
  
 <!--Эта папка находится в системной директории "Android/data/com.topodroid.DistoX/files",
-и она <b>УДАЛЯЕТСЯ</b> при <b>деинсталяции</b> приложения.<br><p -->
- 
-Папка "TopoDroid" содержит файлы базы данных "distox14.sqlite", а также папку экспортированных zip архивов  
- "zip", а также папку проектов пещер "thconfig"<br><p>
+и она <b>УДАЛЯЕТСЯ</b> при <b>деинсталяции</b> приложения.<br><p-->
+
  
 <h4>Импорт съёмок старых верисий</h4>
 Съймки, сделаннык в старых версиях программы могут быть импортированы в виде zip архивов.<br>
 Если у вас нету zip архивов, вы можете создать их с помощью следующих скриптов
 <a href="marcocorvi.altervista.org/caving/speleoapps/speleoapks/TopoDroidZipScript.html">zip_script</a>.
 <br><p>
-  
+ 
+<b>N.B.</b> TopoDroid v.5.1.40 cannot import v.6 zip archives, because of changes in the database.<br><p>
+ 
 <h4>Используемые сенсоры</h4>
 TopoDroid может использовать следующие функции телефона: "bluetooth", "камера", "микрофон", "GPS", "мультитач".
 TopoDroid использует интернет соединение исключительно для получения и установки руководства пользователя.
