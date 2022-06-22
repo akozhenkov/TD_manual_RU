@@ -37,8 +37,8 @@ TopoDroid специально разработан для работы с Disto
 TopoDroid не требует ввода никаких персональных данных. Вся информация и данные, собранные при помощи TopoDroid, хранятся только на вашем устройстве и никуда не передаются и не распространяются в автоматическом режиме.
 <br><p>
 
-<h4>Рабочий каталог TopoDroid</h4>
-Основной каталог программы TopoDroid находится в системной папке "Android/data/com.topodroid.ЕDX/files",
+<h4>Системный каталог TopoDroid</h4>
+Основной каталог программы TopoDroid находится в системной папке "Android/data/com.topodroid.TDX/files",
 в которой находятся подкаталоги для инструментов рисовния, "point", "line" и "area", а также 
 файл базы данных устройств "device10.sqlite", содержащий данные калибровки,
 экспортипрванные данные калибровки (каталог "ccsv"), прошивки DistoX2 (каталог "bin"),
@@ -53,7 +53,7 @@ TopoDroid не требует ввода никаких персональных
 <h4>Каталог съёмок TopoDroid</h4>
 Данные съёмок и абрисы сохраняются в поддиректорию "Documents/TDX", в основной памяти телефона.
 Съемки хранятся в каталоге "TopoDroid". Каждая папка съёмки содержит файл базы данных
- "distox14.sqlite", каталоги "zip", "tmp" для временных файлов ,
+ "distox14.sqlite", каталоги "zip", "tmp" для временных файлов,
 а также папки для каждой новой съёмки.
 <br><p>
 
@@ -64,19 +64,19 @@ TopoDroid не требует ввода никаких персональных
 Данные съёмок и абрисы сохраняются в поддиректорию "TopoDroid" в рабочем каталоге TDX.
 Для каждой съемки создается подкаталог в рабочей папке "TopoDroid".<br>
 Папка "TopoDroid" содержит файлы базы данных "distox14.sqlite", а также каталоги отдельных съемок,
- а также папку проектов пещер "thconfig"<br><p-
+ а также папку проектов пещер "thconfig"<br><p>
 
-<h4>Granting access permissions</h4>
-On Android-11 and later, TopoDroid may fail to create the base folder "TDX", or some subfolders or files in it,
-because it does not have enough permission to access the external storage.<br>
-In this case you cen grant permissions using "adb" (Android Debug Bridge).<br>
+<h4>Предоставление прав доступа</h4>
+На Android-11 и выше, TopoDroid может не иметь возможности создать базовую папку "TDX", или какие-то вложенные папки и файлы в ней,
+потому что у него недостаточно прав для доступа к внешнему хранилищу.<br>
+В этом случае вы можете предоставить разрешения, используя "adb" (Android Debug Bridge).<br>
 <ol>
-<li>download "adb" on your PC</li>
-<li>on Android, enable "Developer options" (go to settings "About Phone", tap seven times the "Build number")</li>
-<li>enable "USB debugging" in the "Developer options"</li>
-<li>on the PC start the adb server. Enter the command "adb start-server"</li>
-<li>connect Android to the PC with a USB cable. You might have to allow adb-connection from the PC, on your Android</li>
-<li>on the PC enter the three commands:
+<li>скачайте "adb" на ваш PC</li>
+<li>в Android, включите "Developer options" (заходим в настройки "О телефоне", тапаем семь раз "Номер сборки")</li>
+<li>включите "USB debugging" в "Developer options"</li>
+<li>на PC запустите adb server. Введите команду "adb start-server"</li>
+<li>подсоедините Android к PC с помощью USB кабеля. Возможно, вам придется разрешить adb-соединение с PC, в вашем Android</li>
+<li>в терминале на PC введите слкдующие три команды:
 <ul>
 <li>adb shell appops set com.topodroid.TDX READ_EXTERNAL_STORAGE allow</li>
 <li>adb shell appops set com.topodroid.TDX WRITE_EXTERNAL_STORAGE allow</li>
