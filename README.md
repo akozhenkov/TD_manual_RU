@@ -11,6 +11,46 @@ Topodroid сверяет эту информацию с "текущей" вер�
 
 TopoDroid RELEASE NOTES
 
+6.1.XX (next) Dropped chinese translation.
+6.1.22 (18-31-31-33) BLE pre-setup. Minor fixex.
+6.1.9-21 (18-31-31-33) Dropped all languages except chinese, italian, russian and hungarian, because of insufficient translation. Request File-Access through Settings at startup. Dropped PNG sketch export and log settings. Updated GHTopo export. Dialog window to adjust graph-paper scale. Fixed minor problems.
+6.1.6-8 (18-31-31-33): testing on Android-12 Data-reduction anomalies dialog. Several lint warnings resolved. Minor fixes
+6.1.1-5 (18-31-31-33): New app name TopoDroidX - package com.topodroid.TDX. Dropped automatic survey transfer from v.5 to v.6. Fixes: zip import, survey rename, user manual, languages.
+6.0.93 (18-30-30-33) Reverting to automatic filepath for exports (files saved in survey "out" folder), because Google Files is an unnecessary pain.
+6.0.87-92 (18-29-29-33) Camera2 test. Removed use of external camera app. Moved shot secondary editing to advanced level
+6.0.80-86 (18-29-29-31) Team string mandatory. Warning on renaiming stations with xsections. Azimuth in photo point shp-export. Compass accuracy check.
+Fixes: audio dialog, photo dialog, xsection point segment, exif clino.
+6.0.73-79 (18-29-29-31) 20220225: Sketch recovering plan+profile at the same time. New setting SVG target program. One more palette check before opening a sketch. Monochrome icon. Fix SVG export scale, DXF export, Trox export, leading 0's in names.
+6.0.63-72 (18-29-29-31) 20220215: Plot auto export reinstated. Station names Compass/Winkarst prefix and VTopo suffix in the export dialog. Fix leg xsection, DB v.45 update, minor fixes.
+6.0.53-62 (18-31-31-31) 20220207: DB version 45, multileg xsections (only for plan view). Single leg xsection grid centered at intersection point. Palette-based color picker. Section point segment in Svg/Dxf/Shp export. Station names prefix in Compass/VTopo/Winkarst export. Settings: splay dash/dot color, color picker. Fixes: projected-profile direction dialog. Minor fixes.
+6.0.41-52 (18-29-29-31) 20220121: code revision: splay dashing, default export format (setting), private plot auto-export. Fix language setting, measure marks, dialogs scrolling, landscape, x-section centering, minor fixes.
+6.0.34-39 (18-29-29-31) 20211228: Walls import (need testing). Fix settings import, TDmanager declination, BRIC4 swapped fw/hw info, zip-import sketches. Stability fixes.
+6.0.32-33 (18-29-29-31) 20211221: Fix cSurvey date format. Project exports using Files app. Man pages update.
+6.0.29-30 (18-29-29-31) 20211215: Fix DEM parser, trox parser. Alert dialog if the app cannot access TDX. Copy/Cut and paste a set of shots from a survey to another.
+6.0.25-27 (18-30-30-31): Fix BRIC4 data handling: replace index if already existing. Added path-denivelations to 3D measure tool. Zip manifest kept in memory. Fix trox export.
+6.0.22-24 (18-30-30-31): Populate TDX from 5.1.40, if it does not exists.
+6.0.21 (18-30-30-31): Icons with border. Minor fixes.
+6.0.13-20 (18-30-30-31): Signed for Android-11. Suggested export filenames. Shapefile data export with saved-stations and fixed-points. Dropped tools triple toolbar and grid item pickers. Side-drag becomes corner-drag. Minor fixes.
+6.0.8-11 (18-30-30-31): device db and symbols in app private folder. Import/export file choice with SAF. Segment/dot splay button. Uniformized 3d model export dialog, and menu strings. Fix: PNG export scale; survey rename, 3d-viewer button bar, buttons background, exif tag sdk, PocketTopo import.
+6.0.7 (18-30-30-31): package name: com.topodroid.DistoX. Commented autowalls. Fix: 3d-viewer saved settings, 3d export dialog, 3d shp export
+6.0.6 (18-30-30-30) 20211007: 3D dialogs use TopoDroid layout. Remote ctrl "calib group".
+6.0.1-4 (18-30-30-30): temporary package name: com.topodroid.Cave3X. Fix: x-section offset.
+6.0.0 (18-30-30-30): 3D viewer included in TopoDroid
+
+5.1.96 (18-30-30-30): Documents/TDX: new base directory. Fix: polygon export team-lines
+5.1.93-94 (18-30-30-30): Fix SVG sketch export labels size
+5.1.91: Moved under a setting file export selection by SAF (files can be truncated). Fix: min Cave3D version
+5.1.88: Fix: Polygon export
+5.1.87 (18-30-30-30): VTopo trox format import/export. Unified import dialog. Minor fixes.
+5.1.85: Scrap number encoded as Z in dxf sketch export. Survey import/export and sketch export: file selection with Storage Access Framework. Exported files are not included in zip archives any more.
+5.1.82 (18-29-29-29): File organization revision started. App files (symbols, calibrations, firmwares, and log) in the app private storage. Ignore 0-length BRIC shots. Sketch PDF export. Fix: taking pictures when Android has no sensors.
+5.1.61 (18-29-29-29): Fix: png-export, sketch list dialog.
+5.1.59: Cave3D version consistency check
+5.1.57: Coordinate input via Proj4: geoid altitude. Geo exports splay declination. Man pages. Fix: work directory setting for Android 9-.
+5.1.56: Loop closure stations sequence. Loop closure error compensation with weights. Fix: data reduction independent cycle identification.
+5.1.55: Экспорт SHP с формой для "особых" точек. Унифицированные названия условных обозначений, избегающие повторы
+5.1.54: База данных v.44. Экспорт скрапов в DXF: оси XY необязательны. Исправлено: включение сечений DXF. Импорт PocketTopo.
+
 5.1.35 - 2021-04-15
 * Переводы руководства теперь хранятся во внутреннем каталоге программы.
 * Апгрейд базы данных (Cave3D требуется переустановка)
