@@ -200,7 +200,7 @@ The magnetic anomaly compensation is done estimating at wach station the
 The "Refresh" button can be used to request a reload of the list, if this happen.
 <br><p>
 
-<b>Компенсация невязок петли</b><br>
+<b>Компенсация невязок колец</b><br>
 Желательно не делать компенсацию, так как это позволяет увидеть величину невязки и определить возможную ошибку в съёмке. 
 Эта нестройка отключекна по умолчанию.<br><p>
 
@@ -208,8 +208,9 @@ The "Refresh" button can be used to request a reload of the list, if this happen
 <i>Нормальная</i> политика [E] равномерно распределяет ошибки невязки по всей нитке хода, которая формирует петлю.<br>
 <i>Взвешенная</i> политика [E] взвешивает невязки в соответсвии удаленностью от места невязки "branch relevance".<br>
 <!-- i don't recall exacty how this works -->
-<i>Выборочная</i> [T] компенсация применяется только к коррекциям петель с невязкой меньше определенного процента
-(the "loop threshold" setting) от длины петли.<br>
+<i>Выборочная</i> [T] компенсация применяется только к петелям с невязкой меньше определенного процента
+(the "loop threshold" setting) от длины петли.
+<br>
 Наконец специальное распределение невязок в кольце основаное на "треугольниках" - <a href="page_trilateration.htm">трилатерация</a> [E].
 <br><p>
 	
