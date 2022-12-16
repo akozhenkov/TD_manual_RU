@@ -12,10 +12,34 @@
 <img src="btn_location.png" alt="location list buttons">
 <br>
 <ul>
-<li><a href="page_fixed_gps.htm">GPS</a> определяет местоположение при помощи GPS телефона (если выставлено разрешение на доступ к местоположению) </li>
+<li><a href="page_fixed_gps.htm">GNSS</a> определяет местоположение при помощи GPS телефона (если выставлено разрешение на доступ к местоположению) </li>
 <li><a href="page_fixed_add.htm">Добавить</a> ввести координаты вручную</li>
-<li><a href="page_fixed_import.htm">Импорт</a> координат из Mobile Topographer (только для версий ОС Android ниже 10)</li>
+<li><a href="page_fixed_import.htm">Импорт</a> координат из GNSS app (только для версий ОС Android ниже 10)</li>
+<li>Запустить приложение <i>GpsTest</i></li>
 </ul>
+<br><p>
+
+<b>Меню</b>:<br>
+<ul>
+<li>Закрыть диалог</li>
+<li>Изменить внешнее приложение геотпривязки</li>
+<li>Помощь</li>
+</ul>
+<br><p>
+
+<b>Внешние приложения GNSS</b><br>
+TopoDroid can import geopoint coordinates from 
+<ul>
+<li><i>MobileTopographer</i> файлы с точками. Откроется диалоговое окно для выбора геоточки.</li>
+<li><i>GPX recorder</i> трек (gpx)  файл. Используется последняя точка трека.</li> 
+<li><i>GPX position</i>  файл (csv) с точками. TopoDroid вычисляет среднее значение позиций.</li> 
+</ul><br>
+
+Номер пикета геоточки, импортированное из <i>GPX recorder</i> и <i>GPX position</i> устанавливается в TopoDroid
+автоматически как номер с префиксом '#'.<br><p>
+
+Кроме того, координаты геоточки сохраняются в буфере обмена с <i>GpsTest</i> app и могут быть переданы в
+поля в диалоговом окне <i>вставка</i>. Обязательно установите флажок для сохранения высот в буфере обмена.<br><p>
 
 При нажатии на элемент в списке открывается диалог <a href="page_fixed.htm">Редактировать привязку</a>.<br><p>
 
@@ -30,6 +54,7 @@
 <ul style="margin-top:0; margin-bottom:0">
 <li><i>Формат координат</i>: либо dd.mm.ss либо доли градусов [A]</li>
 <li><i>C.R.S.</i> система координат [по умолчанию географические координаты] (выключено)</li>
+<li><i>Geopoint app</i> [default none]</li>
 </ul>
 </body>
 </html>
