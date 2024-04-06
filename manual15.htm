@@ -118,8 +118,20 @@ The title bar shows the viewing parameters:
   
 <b>EXPORTS</b><br>
 Модель может быть экспортирована в форматы DXF, KML, STL or STL-binary, CGAL, LAS-binary и shapefile.<br>
-Экспортированные файлы сохраняются в подкаталог "c3export" текущей рабочей папки.
+The exported file is selected with the Android file manager.
 <br><p>
+
+The export dialog has options to include splays, walls, stations and surface.
+(Walls and surface are not supported in all export formats).<br>
+The model can be also serialized in a text file.<br><p>
+
+The GPX export of projects can have all the project surveys in a single track, or include a track
+for each survey. The behavior is determined by the GXP export setting "single-track".<br><p>
+
+The model is exported in a projected metric reference system, centered at the first fixed point.
+The Y axis is the geographic or the magnetic North depending whether the magnetic declination
+is specified or not. It the model is georeferenced the center has an offset computed from the central meridian and
+the equator.<br><p>
 
   
 <b>GRID/FRAME</b><br>
